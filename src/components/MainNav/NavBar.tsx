@@ -6,13 +6,15 @@ const menuToggle = () => {
   const $btnMenu = document.querySelector(".nav-burger"),
     $menu = document.querySelector(".menu");
 
+  if (!$btnMenu || !$menu) return;
+
   $btnMenu.addEventListener("click", (e) => {
     $btnMenu.classList.toggle("open");
     $menu.classList.toggle("is-active");
   });
 
   document.addEventListener("click", (e) => {
-    if (!e.target.matches(".menu a")) return false;
+    if (!e.target || !(e.target as HTMLElement).matches(".menu a")) return false;
     $menu.classList.remove("is-active");
     $btnMenu.classList.remove("open");
   });
@@ -23,6 +25,10 @@ const NavBar = () => {
   useEffect(() => {
     menuToggle();
   }, []);
+
+  const getNavLinkClass = ({ isActive }: { isActive: boolean }) => {
+    return isActive ? "active hvr-underline-from-center" : "hvr-underline-from-center";
+  };
 
   return (
     <Fragment>
@@ -50,46 +56,40 @@ const NavBar = () => {
           <ul className="menu-nav" id="js-menu">
             <li>
               <NavLink
-                exact
                 to="/"
-                className="hvr-underline-from-center"
-                activeClassName="active"
+                className={getNavLinkClass}
               >
                 INICIO
               </NavLink>
             </li>
             <li>
               <NavLink
-                exact
                 to="/nosotros"
-                className="hvr-underline-from-center"
+                className={getNavLinkClass}
               >
                 NOSOTROS
               </NavLink>
             </li>
             <li>
               <NavLink
-                exact
                 to="/servicios"
-                className="hvr-underline-from-center"
+                className={getNavLinkClass}
               >
                 SERVICIOS
               </NavLink>
             </li>
             <li>
               <NavLink
-                exact
                 to="/certificaciones"
-                className="hvr-underline-from-center"
+                className={getNavLinkClass}
               >
                 CERTIFICACIONES
               </NavLink>
             </li>
             <li>
               <NavLink
-                exact
                 to="/contacto"
-                className="hvr-underline-from-center"
+                className={getNavLinkClass}
               >
                 CONTACTO
               </NavLink>
