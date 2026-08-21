@@ -10,14 +10,14 @@
     7.- themes/
 \*-----------------------------------*/
 
-@import 'utils/_variables';
-@import 'utils/_global';
-@import 'utils/_mixins';
+@import 'utils/variables';
+@import 'utils/global';
+@import 'utils/mixins';
 
-@import 'vendors/_normalize';
-@import 'vendors/_animations';
+@import 'vendors/normalize';
+@import 'vendors/animations';
 
-@import 'base/_typography';
+@import 'base/typography';
 
 @import 'components/common/hero-slogan';
 @import 'components/common/header-nav';

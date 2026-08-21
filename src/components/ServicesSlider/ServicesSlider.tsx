@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect } from "react";
+import "./ServicesSlider.scss";
 
 const heroSlider = () => {
   const slider = document.querySelector("#hero-slider");

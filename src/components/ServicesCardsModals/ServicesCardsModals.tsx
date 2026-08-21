@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect } from "react";
+import "./ServicesCardsModals.scss";
 import { services as dataServices } from "../../utils/services";
 
 const cardsModal = () => {

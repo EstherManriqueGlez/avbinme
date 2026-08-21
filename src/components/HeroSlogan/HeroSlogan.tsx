@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import "./HeroSlogan.scss";
 
 const HeroSlogan = () => {
   return (

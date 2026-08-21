@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import "./ContactLinks.scss";
 
 const ContactLinks = () => {
   return (

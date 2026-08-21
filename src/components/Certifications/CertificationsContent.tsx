@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect } from "react";
+import "./CertificationsContent.scss";
 
 const acordionToggle = () => {
   const blocks = document.querySelectorAll(".acordion .block");
