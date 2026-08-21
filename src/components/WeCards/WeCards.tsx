@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import "./WeCards.scss";
 
 const WeCards = () => {
   return (

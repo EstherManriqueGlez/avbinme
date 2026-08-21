@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import "./NavBar.scss";
 
 
 const menuToggle = () => {
