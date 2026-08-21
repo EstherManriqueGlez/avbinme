@@ -1,0 +1,65 @@
+/*** VARIABLES ***/
+
+/*-----------------------------------*\
+    FONT FAMILY
+\*-----------------------------------*/
+$ff-nunito: 'Nunito', sans-serif;
+
+/*-----------------------------------*\
+    BREAKPOINTS IN CORRECT ORDER
+\*-----------------------------------*/
+$mobile-small-BP: 400px;
+$mobile-BP: 640px;
+$tablet-BP: 768px; // esta
+$desktop-BP: 1024px; // esta
+$desktop-big-BP: 1200px;
+$desktop-extra-big-BP: 1366px;
+$desktop-max-big-BP: 1600px;
+
+/*-----------------------------------*\
+    COLORS
+\*-----------------------------------*/
+$wine: #7d4039;
+$gray: #949494;
+$gray-soft: #f1f1f1;
+$gray-soft-1: #f2f2f2;
+$gray-dark: #979797;
+$gray-modal: #ebebeb;
+$dark: #333333;
+$black: #000000;
+$white: #ffffff;
+
+
+/*-----------------------------------*\
+    VARIABLES MIXINS
+\*-----------------------------------*/
+
+
+/* Aquí definimos las Custom properties */
+:root{
+    --negro         : #393939;
+    --blanco        : #ececec;
+    --sombra-ppal   : #c9c9c9;
+    --sombra-sec    : #ffffff;
+    --borde-negro   : #00000050;
+
+    --marcado       : rgb(127, 195, 255);
+
+    /* Tipografía */
+    --tipo-principal  : Helvetica, Arial, sans-serif;
+}
+    
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root{
+        --negro         : #ececec;
+        --blanco        : #303030;
+        --sombra-ppal   : #242424;
+        --sombra-sec    : #3c3c3c;
+
+        --borde-negro   : #FFFFFF50;
+    }
+}
+
+
+

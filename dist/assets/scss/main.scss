@@ -1,0 +1,40 @@
+/*** AQUI IMPORTO LOS ARCHIVOS ***/
+/*** EL ORDEN DE LOS ARCHIVOS A IMPORTAR (IMPORTA) ***/
+/*-----------------------------------*\
+    1.- utils/
+    2.- vendors/
+    3.- base/
+    4.- layout/
+    5.- components/
+    6.- pages/
+    7.- themes/
+\*-----------------------------------*/
+
+@import 'utils/variables';
+@import 'utils/global';
+@import 'utils/mixins';
+
+@import 'vendors/normalize';
+@import 'vendors/animations';
+
+@import 'base/typography';
+
+@import 'components/common/hero-slogan';
+@import 'components/common/header-nav';
+@import 'components/common/main-subtitle';
+@import 'components/common/footer';
+
+@import 'components/home/services';
+
+@import 'components/we/cards-we';
+@import 'components/we/content-we';
+
+@import 'components/services/services-slider';
+@import 'components/services/cards-services';
+@import 'components/services/cards-modal';
+
+@import 'components/certifications/certifications';
+
+@import 'components/contact/contact';
+
+
