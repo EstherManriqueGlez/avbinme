@@ -10,14 +10,16 @@ const menuToggle = () => {
   if (!$btnMenu || !$menu) return;
 
   $btnMenu.addEventListener("click", (e) => {
-    $btnMenu.classList.toggle("open");
+    const isOpen = $btnMenu.classList.toggle("open");
     $menu.classList.toggle("is-active");
+    $btnMenu.setAttribute("aria-expanded", isOpen ? "true" : "false");
   });
 
   document.addEventListener("click", (e) => {
     if (!e.target || !(e.target as HTMLElement).matches(".menu a")) return false;
     $menu.classList.remove("is-active");
     $btnMenu.classList.remove("open");
+    $btnMenu.setAttribute("aria-expanded", "false");
   });
 };
 
@@ -46,11 +48,17 @@ const NavBar = () => {
         </div>
 
         <div className="hide-on-med-and-up burger-icon">
-            <div className="nav-burger" data-alloy-navbar-target="#js-menu">
+            <button 
+              type="button" 
+              className="nav-burger" 
+              data-alloy-navbar-target="#js-menu" 
+              aria-label="Abrir menú de navegación"
+              aria-expanded="false"
+            >
               <span></span>
               <span></span>
               <span></span>
-            </div>
+            </button>
           </div>
 
         <nav className="menu">
