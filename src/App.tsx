@@ -1,11 +1,11 @@
-import Footer from "./components/Footer/Footer.js";
-import NavBar from "./components/MainNav/NavBar.js";
+import Footer from "./components/Footer/Footer";
+import NavBar from "./components/MainNav/NavBar";
 import { Routes, Route, HashRouter } from "react-router-dom";
-import Home from "./components/Pages/Home.js";
-import We from "./components/Pages/We.js";
-import Contact from "./components/Pages/Contact.js";
-import Services from "./components/Pages/Services.js";
-import Certifications from "./components/Pages/Certifications.js";
+import Home from "./components/Pages/Home";
+import We from "./components/Pages/We";
+import Contact from "./components/Pages/Contact";
+import Services from "./components/Pages/Services";
+import Certifications from "./components/Pages/Certifications";
 
 function App() {
   return (
