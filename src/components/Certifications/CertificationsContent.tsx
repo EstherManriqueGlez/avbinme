@@ -1,35 +1,41 @@
 import React, { Fragment, useState } from "react";
+import imgCamSam from "@/assets/images/Logo-CAM-SAM.png";
+import logoShf from "@/assets/images/LOGO_SHF.svg";
+import imgTsj from "@/assets/images/TSJ.png";
+import imgPjf from "@/assets/images/PJF.png";
+import imgTesoreria from "@/assets/images/Tesoteria.svg";
+import imgIndaabin from "@/assets/images/Indaabin.png";
 import "./CertificationsContent.scss";
 
 const CERTIFICATIONS = [
   {
     title: "Colegio de Arquitectos de la CDMX",
-    img: "/assets/images/Logo-CAM-SAM.png",
+    img: imgCamSam,
     alt: "Logotipo de CAM-SAM",
   },
   {
     title: "Sociedad Hipotecaria Federal",
-    img: "/assets/images/LOGO_SHF.svg",
+    img: logoShf,
     alt: "Logotipo de SHF",
   },
   {
     title: "Tribunal Superior de Justicia de la CDMX",
-    img: "/assets/images/TSJ.png",
+    img: imgTsj,
     alt: "Logotipo del TSJ",
   },
   {
     title: "Poder Judicial de la Federación",
-    img: "/assets/images/PJF.png",
+    img: imgPjf,
     alt: "Logotipo del PJF",
   },
   {
     title: "Tesorería de la CDMX",
-    img: "/assets/images/Tesoteria.svg",
+    img: imgTesoreria,
     alt: "Logotipo de la Tesorería de la CDMX",
   },
   {
     title: "Instituto de Administración y Avalúos de Bienes Nacionales",
-    img: "/assets/images/Indaabin.png",
+    img: imgIndaabin,
     alt: "Logotipo de Indaabin",
   },
 ];

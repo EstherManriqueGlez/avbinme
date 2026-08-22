@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logoAvbime from "@/assets/images/Logo_Web_Positivo.svg";
 import "./NavBar.scss";
 
 const NAV_ITEMS = [
@@ -23,7 +24,7 @@ const NavBar = () => {
         <div className="logo">
           <Link to="/">
             <img
-              src={"/assets/images/Logo_Web_Positivo.svg"}
+              src={logoAvbime}
               alt="Logotipo AvBIME"
             />
           </Link>

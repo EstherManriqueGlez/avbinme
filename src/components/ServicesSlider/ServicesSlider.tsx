@@ -1,9 +1,13 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
+import slideNegocios from "@/assets/images/slide-1.jpg";
+import slideEvaluacionPI from "@/assets/images/slide-2.jpg";
+import slideMaquinaria from "@/assets/images/slide-3.jpg";
+import slideAnalisisInversion from "@/assets/images/slide-4.jpg";
 import "./ServicesSlider.scss";
 
 const SLIDES = [
   {
-    img: "/assets/images/slide-1.jpg",
+    img: slideNegocios,
     alt: "Imagen de Negocios en Marcha",
     title: (
       <>
@@ -12,7 +16,7 @@ const SLIDES = [
     ),
   },
   {
-    img: "/assets/images/slide-2.jpg",
+    img: slideEvaluacionPI,
     alt: "Imagen de Evaluación de Proyectos Inmobiliarios",
     title: (
       <>
@@ -21,7 +25,7 @@ const SLIDES = [
     ),
   },
   {
-    img: "/assets/images/slide-3.jpg",
+    img: slideMaquinaria,
     alt: "Imagen de Valuación de Maquinaria y Equipo",
     title: (
       <>
@@ -30,7 +34,7 @@ const SLIDES = [
     ),
   },
   {
-    img: "/assets/images/slide-4.jpg",
+    img: slideAnalisisInversion,
     alt: "Imagen de Análisis de Inversión Inmobiliaria",
     title: (
       <>
