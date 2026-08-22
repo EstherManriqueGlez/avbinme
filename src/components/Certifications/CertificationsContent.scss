@@ -1,5 +1,3 @@
-@import "@/styles/variables";
-@import "@/styles/mixins";
 section.content-certifications {
   .main-subtitle {
     h2 {
@@ -73,7 +71,7 @@ section.content-certifications {
           transition: all 0.3s ease-in-out;
 
           &.icon-acordion {
-            background: url("/assets/icons/acordion.svg") no-repeat center;
+            background: url("../../assets/icons/acordion.svg") no-repeat center;
           }
         }
       }

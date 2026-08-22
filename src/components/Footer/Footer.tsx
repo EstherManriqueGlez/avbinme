@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import logoNegativo from "@/assets/images/Logo_Negativo.svg";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="footer-logo">
           <Link to="/">
             <img
-              src={"/assets/images/Logo_Negativo.svg"}
+              src={logoNegativo}
               alt="Logotipo AvBIME"
             />
           </Link>

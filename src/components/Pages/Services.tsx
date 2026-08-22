@@ -1,19 +1,19 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useState } from 'react'
 import ServicesCards from '../ServicesCards/ServicesCards'
 import ServicesCardsModals from '../ServicesCardsModals/ServicesCardsModals'
 import ServicesSlider from '../ServicesSlider/ServicesSlider'
 
 const Services = () => {
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const [activeService, setActiveService] = useState<string | null>(null);
 
   return (
     <Fragment>
       <ServicesSlider />
-      <ServicesCards />
-      <ServicesCardsModals />
+      <ServicesCards onOpenService={setActiveService} />
+      <ServicesCardsModals
+        service={activeService}
+        onClose={() => setActiveService(null)}
+      />
     </Fragment>
   )
 }

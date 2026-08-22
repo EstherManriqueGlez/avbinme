@@ -1,4 +1,7 @@
 import React, { Fragment } from "react";
+import imgMision from "@/assets/images/Misión.jpg";
+import imgVision from "@/assets/images/Visión.jpg";
+import imgValores from "@/assets/images/Valores.jpg";
 import "./WeCards.scss";
 
 const WeCards = () => {
@@ -14,7 +17,7 @@ const WeCards = () => {
               <div className="card-image-mision">
                 <img
                   className="is-fluid"
-                  src={"/assets/images/Misión.jpg"}
+                  src={imgMision}
                   alt="Imagen de Misión"
                 />
               </div>
@@ -46,7 +49,7 @@ const WeCards = () => {
               <div className="card-image-vision">
                 <img
                   className="is-fluid"
-                  src={"/assets/images/Visión.jpg"}
+                  src={imgVision}
                   alt="Imagen de Visión"
                 />
               </div>
@@ -147,7 +150,7 @@ const WeCards = () => {
               <div className="card-image-valores">
                 <img
                   className="is-fluid"
-                  src={"/assets/images/Valores.jpg"}
+                  src={imgValores}
                   alt="Imagen de Valores"
                 />
               </div>

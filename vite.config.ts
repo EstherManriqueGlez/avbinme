@@ -7,15 +7,15 @@ export default defineConfig({
   base: '/avbinme-react/',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': path.resolve(import.meta.dirname, 'src'),
     },
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/styles/variables"; @import "@/styles/mixins";`,
+        additionalData: `@import "@/styles/utils/variables"; @import "@/styles/utils/mixins";`,
         api: 'modern',
-        silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'mixed-decls'],
+        silenceDeprecations: ['import', 'global-builtin', 'color-functions'],
       },
     },
   },

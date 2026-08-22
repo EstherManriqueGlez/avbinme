@@ -1,5 +1,3 @@
-@import "@/styles/variables";
-@import "@/styles/mixins";
 section.services {
   background: url("../../assets/images/bg_main-mobile_1.jpg") no-repeat 0 0;
   background-size: cover;
@@ -86,47 +84,47 @@ section.services {
           }
 
           &.service-1 {
-            background-image: url("/assets/icons/010-edificios.svg");
+            background-image: url("../../assets/icons/010-edificios.svg");
           }
 
           &.service-2 {
-            background-image: url("/assets/icons/004-estadisticas.svg");
+            background-image: url("../../assets/icons/004-estadisticas.svg");
           }
 
           &.service-3 {
-            background-image: url("/assets/icons/007-analisis-de-mercado.svg");
+            background-image: url("../../assets/icons/007-analisis-de-mercado.svg");
           }
 
           /* &.service-4 {
-            background-image: url("/assets/icons/009-estado-financiero.svg");
+            background-image: url("../../assets/icons/009-estado-financiero.svg");
           } */
 
           &.service-5 {
-            background-image: url("/assets/icons/activos-1.svg");
+            background-image: url("../../assets/icons/activos-1.svg");
           }
 
           &.service-6 {
-            background-image: url("/assets/icons/edificio-de-oficinas-1.svg");
+            background-image: url("../../assets/icons/edificio-de-oficinas-1.svg");
           }
 
           &.service-7 {
-            background-image: url("/assets/icons/003-ruedas-dentadas.svg");
+            background-image: url("../../assets/icons/003-ruedas-dentadas.svg");
           }
 
           /* &.service-8 {
-            background-image: url("/assets/icons/006-cadena-de-valor-1.svg");
+            background-image: url("../../assets/icons/006-cadena-de-valor-1.svg");
           }
 
           &.service-9 {
-            background-image: url("/assets/icons/005-buscar.svg");
+            background-image: url("../../assets/icons/005-buscar.svg");
           }
 
           &.service-10 {
-            background-image: url("/assets/icons/012-casas-1.svg");
+            background-image: url("../../assets/icons/012-casas-1.svg");
           } */
 
           &.service-11 {
-            background-image: url("/assets/icons/justice-law-svgrepo-com.svg");
+            background-image: url("../../assets/icons/justice-law-svgrepo-com.svg");
           }
         }
       }
