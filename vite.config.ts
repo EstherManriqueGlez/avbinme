@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/avbinme-react/',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': path.resolve(import.meta.dirname, 'src'),
     },
   },
   css: {
