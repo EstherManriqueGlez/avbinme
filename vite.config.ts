@@ -15,7 +15,7 @@ export default defineConfig({
       scss: {
         additionalData: `@import "@/styles/variables"; @import "@/styles/mixins";`,
         api: 'modern',
-        silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'mixed-decls'],
+        silenceDeprecations: ['import', 'global-builtin', 'color-functions'],
       },
     },
   },
