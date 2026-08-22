@@ -1,64 +1,50 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import "./ServicesCardsModals.scss";
 import { services as dataServices } from "../../utils/services";
 
-const cardsModal = () => {
-  const servicesButtons = document.querySelectorAll("[data-modal-id]");
-  if (servicesButtons.length) {
-    const modal = document.querySelector(".cards-modals .modal");
-    const modalClose = modal.querySelector(".icon-modal-close");
-    const modalInfo = modal.querySelector(".modal-info");
-    let modalContent = "";
+interface ServicesCardsModalsProps {
+  service: string | null;
+  onClose: () => void;
+}
 
-    modalClose.addEventListener("click", () => {
-      toggleModal(modal, 0, "none");
-    });
-
-    servicesButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        let service = button.dataset.modalId;
-        let serviceInfo = dataServices[service];
-        modalContent = `<span class="icon-${service}"></span>
-      <h2>${serviceInfo.title}</h2>
-      <p>${serviceInfo.description}</p>`;
-        modalInfo.innerHTML = "";
-        modalInfo.insertAdjacentHTML("afterbegin", modalContent);
-        toggleModal(modal, 1, "all");
-      });
-    });
-
-    let hash = window.location.hash;
-    if (hash) {
-      hash = hash.replace("#", "");
-      const buttonHash = document.querySelector(
-        '[data-modal-id="' + hash + '"]'
-      );
-      if (buttonHash) {
-        buttonHash.click();
-      }
-    }
-  }
-};
-
-const toggleModal = (modal, opacity, pointer) => {
-  modal.style.opacity = opacity;
-  modal.style.pointerEvents = pointer;
-};
-
-const ServicesCardsModals = () => {
-  useEffect(() => {
-    cardsModal();
-  }, []);
+const ServicesCardsModals = ({ service, onClose }: ServicesCardsModalsProps) => {
+  const serviceInfo = service ? dataServices[service as keyof typeof dataServices] : null;
 
   return (
     <Fragment>
       <section className="cards-modals">
-        <div className="modal">
+        <div
+          className="modal"
+          style={{
+            opacity: service ? 1 : 0,
+            pointerEvents: service ? "all" : "none",
+          }}
+          aria-hidden={!service}
+        >
           <div className="modals-content">
             <div>
-              <span className="icon-modal-close"></span>
+              <span
+                className="icon-modal-close"
+                role="button"
+                tabIndex={service ? 0 : -1}
+                aria-label="Cerrar ventana"
+                onClick={onClose}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") onClose();
+                }}
+              ></span>
             </div>
-            <div className="modal-info"></div>
+            <div className="modal-info">
+              {service && serviceInfo && (
+                <>
+                  <span className={`icon-${service}`}></span>
+                  <h2>{serviceInfo.title}</h2>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: serviceInfo.description }}
+                  />
+                </>
+              )}
+            </div>
           </div>
         </div>
       </section>
