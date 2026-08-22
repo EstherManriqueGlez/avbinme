@@ -1,5 +1,6 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@import "@/styles/components/common/main-subtitle";
+@import "@/styles/variables";
+@import "@/styles/mixins";
 section.content-contact {
   position: relative;
   overflow: hidden;
@@ -82,7 +83,7 @@ section.content-contact {
   }
 
   .text-circle {
-    background: url("../../assets/icons/circle-text.svg") no-repeat center;
+    background: url("/assets/icons/circle-text.svg") no-repeat center;
     background-size: cover;
     width: 15rem;
     height: 15rem;
