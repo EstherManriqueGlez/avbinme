@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/avbinme-react/',
+  // base: '/avbinme-react/',
   resolve: {
     alias: {
       '@': path.resolve(import.meta.dirname, 'src'),
@@ -14,7 +14,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `@import "@/styles/utils/variables"; @import "@/styles/utils/mixins";`,
-        api: 'modern',
+        // api: 'modern',
         silenceDeprecations: ['import', 'global-builtin', 'color-functions'],
       },
     },

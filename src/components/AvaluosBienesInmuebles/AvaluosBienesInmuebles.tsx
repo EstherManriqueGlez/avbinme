@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 const AvaluosBienesInmuebles = () => {
   return (
@@ -24,7 +24,7 @@ const AvaluosBienesInmuebles = () => {
           aria-label="Título de la página Inicio"
         >
           <h2>AVALÚOS</h2>
-         <span className="line-title"></span>
+          <span className="line-title"></span>
         </div>
 
         <div className="services-content">
@@ -46,9 +46,6 @@ const AvaluosBienesInmuebles = () => {
                   Justipreciación de Rentas
                 </Link>
               </li>
-              {/* <li className="service-10" id="service-10">
-                <Link to="/servicios#avaluo-maestro">Avalúo Maestro</Link>
-              </li> */}
               <li className="service-6" id="service-6">
                 <Link to="/servicios#regimen-de-propiedad-en-condominio">
                   Régimen de Propiedad en Condominio
@@ -64,21 +61,6 @@ const AvaluosBienesInmuebles = () => {
                   Evaluación de Proyectos Inmobiliarios
                 </Link>
               </li>
-              {/* <li className="service-8" id="service-8">
-                <Link to="/servicios#estudios-de-factibilidad">
-                  Estudios de Factibilidad
-                </Link>
-              </li>
-              <li className="service-9" id="service-9">
-                <Link to="/servicios#analisis-de-inversion-inmobiliaria">
-                  Análisis de Inversión Inmobiliaria
-                </Link>
-              </li>
-              <li className="service-4" id="service-4">
-                <Link to="/servicios#reexpresion-de-estados-financieros">
-                  Reexpresión de Estados Financieros
-                </Link>
-              </li> */}
             </ul>
           </div>
         </div>
