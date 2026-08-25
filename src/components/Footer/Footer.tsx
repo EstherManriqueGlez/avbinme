@@ -16,8 +16,8 @@ const Footer = () => {
               </Link>
               <p className="footer-tagline">
                 Servicios profesionales en valuación inmobiliaria, maquinaria y
-                equipo, activos intangibles y peritajes judiciales con más de 30
-                años de experiencia.
+                equipo, activos intangibles y peritajes judiciales. Contamos con
+                más de 30 años de experiencia.
               </p>
             </div>
 

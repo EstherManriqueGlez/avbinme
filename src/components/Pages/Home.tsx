@@ -1,4 +1,6 @@
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
+import { Link } from "react-router-dom";
+
 import AvaluosBienesInmuebles from '../AvaluosBienesInmuebles/AvaluosBienesInmuebles';
 import HeroSlogan from "../HeroSlogan/HeroSlogan";
 import "./Home.scss";
@@ -25,12 +27,11 @@ const Home = () => {
       <section className="conversion-cta-section">
         <div className="container">
           <div className="cta-card">
-            <div className="cta-badge">Atención Inmediata B2B</div>
+            <div className="cta-badge">Atención Inmediata</div>
             <h2>¿Requiere un Avalúo con Validez Legal y Rigor Técnico?</h2>
             <p>Nuestros peritos valuadores certificados ofrecen dictámenes precisos y profesionales para empresas, notarías e instituciones.</p>
             <div className="cta-actions">
-              <a href="/contacto" className="btn-primary-gold">Solicitar Cotización Inmediata</a>
-              <a href="tel:+525555889578" className="btn-secondary-phone">Llamada Directa</a>
+              <Link to="/contacto" className="btn-primary-gold">Solicitar Cotización Inmediata</Link>
             </div>
           </div>
         </div>
