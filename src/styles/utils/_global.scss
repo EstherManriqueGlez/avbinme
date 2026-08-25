@@ -13,16 +13,20 @@ html {
 }
 
 body {
-  font-family: $ff-nunito;
+  font-family: $ff-sans;
+  background-color: $bg-light;
+  color: $charcoal;
   padding-top: 7.2rem;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   @media screen and (min-width: $tablet-BP) {
     padding-top: 8rem;
   }
 
   @media screen and (min-width: $desktop-BP) {
-    padding-top: 10rem;
+    padding-top: 9rem;
   }
 
   * {
@@ -31,20 +35,14 @@ body {
 }
 
 .main-content {
-  /* min-height: calc(100vh - 12.4rem); */
   min-height: auto;
-
-/*   @media screen and (min-width: $tablet-BP) {
-    min-height: calc(100vh - 17.1rem);
-  } */
-
 }
 
 .container {
-  padding: 0 2rem;
+  padding: 0 2.4rem;
 
   @media screen and (min-width: $tablet-BP) {
-    max-width: 800px;
+    max-width: 760px;
     margin: 0 auto;
   }
 

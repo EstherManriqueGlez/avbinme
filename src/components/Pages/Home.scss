@@ -1,85 +1,126 @@
 section.services {
-  background: url("../../assets/images/bg_main-mobile_1.jpg") no-repeat 0 0;
-  background-size: cover;
+  background: $bg-light;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 8rem 2rem 10rem;
+  position: relative;
 
   @media screen and (min-width: $tablet-BP) {
-    background-image: url("../../assets/images/bg_main-tablet.jpg");
+    padding: 10rem 4rem 12rem;
   }
 
   @media screen and (min-width: $desktop-BP) {
-    background-image: url("../../assets/images/bg_main-desktop.jpg");
+    padding: 12rem 6rem 14rem;
   }
 
   .main-title {
     h1 {
-      color: $black;
+      font-family: $ff-serif;
+      color: $charcoal;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
       margin-bottom: 2rem;
+      max-width: 900px;
 
       @media screen and (min-width: $tablet-BP) {
-        font-size: 3.5rem;
+        font-size: 4.4rem;
       }
 
       @media screen and (min-width: $desktop-BP) {
-        font-size: 5rem;
+        font-size: 5.4rem;
       }
     }
   }
 
   .main-subtitle {
-    padding: 0 0 1rem;
+    padding: 0 0 4rem;
+    h2 {
+      font-family: $ff-sans;
+      letter-spacing: 0.25em;
+      font-size: 1.1rem;
+      color: $gold;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .line-title {
+      display: block;
+      width: 40px;
+      height: 1.5px;
+      background-color: $gold;
+      margin: 1rem auto 0;
+    }
   }
 
   .services-content {
+    background: #ffffff;
+    border-radius: 1.6rem;
+    padding: 4rem 3rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+    max-width: 1100px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    @media screen and (min-width: $tablet-BP) {
+      padding: 5rem 6rem;
+    }
+
     .container {
       padding: 0;
+      max-width: 100%;
+      margin: 0;
+
       .list-services {
         text-align: left;
         list-style: none;
-        padding-left: 0.5rem;
-        padding-bottom: 1rem;
-        cursor: pointer;
+        padding-left: 0;
         margin: 0;
 
         @media screen and (min-width: $desktop-BP) {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          grid-gap: 2rem 10rem;
-          padding-top: 4.5rem;
-          padding-bottom: 4.5rem;
+          grid-gap: 3rem 6rem;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
         }
 
         li {
-          background-size: 1.8rem;
+          background-size: 2.4rem;
           background-position: left center;
           background-repeat: no-repeat;
-          padding-left: 3rem;
+          padding-left: 4rem;
+          margin-bottom: 2.2rem;
+          transition: transform 0.25s ease;
+
+          &:hover {
+            transform: translateX(6px);
+          }
 
           @media screen and (min-width: $tablet-BP) {
-            background-size: 2.5rem;
+            background-size: 2.8rem;
             padding-left: 5rem;
+            margin-bottom: 2.8rem;
           }
 
           a {
             text-decoration: none;
-            color: $dark;
+            color: $charcoal;
             font-size: 1.6rem;
-            line-height: 2.95;
-            font-weight: bold;
+            line-height: 1.5;
+            font-weight: 500;
+            font-family: $ff-sans;
 
             @media screen and (min-width: $tablet-BP) {
-              font-size: 2.2rem;
-              line-height: 3.48;
+              font-size: 1.9rem;
             }
             
             @media screen and (min-width: $desktop-BP) {
-              font-size: 2.5rem;
-              line-height: 2;
+              font-size: 2rem;
             }
           }
 
@@ -95,10 +136,6 @@ section.services {
             background-image: url("../../assets/icons/007-analisis-de-mercado.svg");
           }
 
-          /* &.service-4 {
-            background-image: url("../../assets/icons/009-estado-financiero.svg");
-          } */
-
           &.service-5 {
             background-image: url("../../assets/icons/activos-1.svg");
           }
@@ -111,21 +148,206 @@ section.services {
             background-image: url("../../assets/icons/003-ruedas-dentadas.svg");
           }
 
-          /* &.service-8 {
-            background-image: url("../../assets/icons/006-cadena-de-valor-1.svg");
-          }
-
-          &.service-9 {
-            background-image: url("../../assets/icons/005-buscar.svg");
-          }
-
-          &.service-10 {
-            background-image: url("../../assets/icons/012-casas-1.svg");
-          } */
-
           &.service-11 {
             background-image: url("../../assets/icons/justice-law-svgrepo-com.svg");
           }
+        }
+      }
+    }
+  }
+}
+
+/* Banner de Introducción del Home */
+.home-intro-banner {
+  background: #0c0c0c;
+  color: #ffffff;
+  padding: 8rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+
+  @media screen and (min-width: $tablet-BP) {
+    padding: 10rem 4rem;
+  }
+
+  .container {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .badge-luxury {
+    display: inline-block;
+    background-color: rgba(197, 160, 89, 0.15);
+    color: $gold-light;
+    font-family: $ff-sans;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+  }
+
+  h2 {
+    font-family: $ff-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    color: #ffffff;
+
+    @media screen and (min-width: $tablet-BP) {
+      font-size: 4.4rem;
+    }
+  }
+
+  p {
+    font-family: $ff-sans;
+    font-size: 1.6rem;
+    color: #aaaaaa;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet-BP) {
+      font-size: 1.9rem;
+    }
+  }
+}
+
+/* Sección de Conversión de Alto Impacto */
+.conversion-cta-section {
+  background-color: #0c0c0c;
+  padding: 8rem 2rem;
+  text-align: center;
+  color: #ffffff;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+
+  @media screen and (min-width: $tablet-BP) {
+    padding: 10rem 4rem;
+  }
+
+  .container {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .cta-card {
+    background: #141414;
+    border: 1px solid rgba(197, 160, 89, 0.25);
+    border-radius: 1.6rem;
+    padding: 5rem 3rem;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+
+    @media screen and (min-width: $tablet-BP) {
+      padding: 6rem 7rem;
+    }
+
+    .cta-badge {
+      display: inline-block;
+      background-color: rgba(197, 160, 89, 0.15);
+      color: $gold-light;
+      font-family: $ff-sans;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.8rem 1.6rem;
+      border-radius: 2rem;
+      margin-bottom: 2.5rem;
+      border: 1px solid rgba(197, 160, 89, 0.3);
+    }
+
+    h2 {
+      font-family: $ff-serif;
+      font-size: 2.8rem;
+      font-weight: 500;
+      line-height: 1.25;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+
+      @media screen and (min-width: $tablet-BP) {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      font-family: $ff-sans;
+      font-size: 1.6rem;
+      color: #aaaaaa;
+      line-height: 1.7;
+      margin-bottom: 4rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media screen and (min-width: $tablet-BP) {
+        font-size: 1.9rem;
+      }
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (min-width: $tablet-BP) {
+        flex-direction: row;
+        gap: 2rem;
+      }
+
+      .btn-primary-gold {
+        background-color: $gold;
+        color: #0c0c0c;
+        font-family: $ff-sans;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 1.6rem 3.5rem;
+        border-radius: 0.8rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(197, 160, 89, 0.3);
+        width: 100%;
+
+        @media screen and (min-width: $tablet-BP) {
+          width: auto;
+        }
+
+        &:hover {
+          background-color: $gold-light;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 25px rgba(197, 160, 89, 0.5);
+        }
+      }
+
+      .btn-secondary-phone {
+        background-color: transparent;
+        color: #ffffff;
+        font-family: $ff-sans;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 1.6rem 3.5rem;
+        border-radius: 0.8rem;
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        transition: all 0.3s ease;
+        width: 100%;
+
+        @media screen and (min-width: $tablet-BP) {
+          width: auto;
+        }
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.06);
+          border-color: #ffffff;
+          transform: translateY(-2px);
         }
       }
     }

@@ -7,7 +7,34 @@ const Home = () => {
   return (
     <Fragment>
       <HeroSlogan /> 
+      
+      {/* Sección de Introducción de Autoridad y Servicios */}
+      <section className="home-intro-banner">
+        <div className="container">
+          <div className="intro-content">
+            <span className="badge-luxury">Excelencia Pericial y Valuación</span>
+            <h2>Rigurosidad Técnica y Validez Jurídica</h2>
+            <p>Brindamos dictámenes periciales certificados con los más altos estándares normativos para corporativos, instituciones y particulares en todo México.</p>
+          </div>
+        </div>
+      </section>
+
       <AvaluosBienesInmuebles />
+      
+      {/* Sección de Conversión de Alto Impacto (Menos de 90 segundos) */}
+      <section className="conversion-cta-section">
+        <div className="container">
+          <div className="cta-card">
+            <div className="cta-badge">Atención Inmediata B2B</div>
+            <h2>¿Requiere un Avalúo con Validez Legal y Rigor Técnico?</h2>
+            <p>Nuestros peritos valuadores certificados ofrecen dictámenes precisos y profesionales para empresas, notarías e instituciones.</p>
+            <div className="cta-actions">
+              <a href="/contacto" className="btn-primary-gold">Solicitar Cotización Inmediata</a>
+              <a href="tel:+525555889578" className="btn-secondary-phone">Llamada Directa</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </Fragment>
   )
 }
