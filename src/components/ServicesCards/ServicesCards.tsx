@@ -18,7 +18,7 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
       <section className="cards-services">
         <div className="container">
           <div className="cards-wrapper">
-            <div className="card-services">
+            <div className="card-services" id="inmuebles">
               <div className="card-image">
                 <img
                   src={imgInmuebles}
@@ -37,7 +37,7 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
                 </div>
               </div>
             </div>
-            <div className="card-services">
+            <div className="card-services" id="maquinaria-y-equipo">
               <div className="card-image">
                 <img
                   src={imgMaquinaria}
@@ -56,7 +56,7 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
                 </div>
               </div>
             </div>
-            <div className="card-services">
+            <div className="card-services" id="avaluo-judicial">
               <div className="card-image">
                 <img
                   src={imgOpinionValor}
@@ -75,7 +75,7 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
                 </div>
               </div>
             </div>
-            <div className="card-services">
+            <div className="card-services" id="justipreciacion-de-rentas">
               <div className="card-image">
                 <img
                   src={imgJustipreciacion}
@@ -113,7 +113,7 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
                 </div>
               </div>
             </div> */}
-            <div className="card-services">
+            <div className="card-services" id="regimen-de-propiedad-en-condominio">
               <div className="card-image">
                 <img
                   src={imgRegimenCondominio}
@@ -134,7 +134,7 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
                 </div>
               </div>
             </div>
-            <div className="card-services">
+            <div className="card-services" id="negocios-en-marcha">
               <div className="card-image">
                 <img
                   src={imgNegociosMarcha}
@@ -153,7 +153,7 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
                 </div>
               </div>
             </div>
-            <div className="card-services">
+            <div className="card-services" id="evaluacion-de-proyectos-inmobliarios">
               <div className="card-image">
                 <img
                   src={imgEvaluacionPI}
