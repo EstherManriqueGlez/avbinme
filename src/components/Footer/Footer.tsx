@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import logoNegativo from '@/assets/images/Logo_Negativo.svg';
 import logo from '@/assets/images/logo.png';
+import { CONTACT_INFO } from '@/utils/constants';
 import './Footer.scss';
 
 const Footer = () => {
@@ -45,11 +46,15 @@ const Footer = () => {
             <div className="footer-col contact-col">
               <h4>Contacto Directo</h4>
               <p>
-                <a href="tel:5529551257">55 2955 1257</a> /{' '}
-                <a href="tel:5555889578">55 5588 9578</a>
+                {CONTACT_INFO.phones.map((phone, i) => (
+                  <span key={phone.href}>
+                    {i > 0 && " / "}
+                    <a href={phone.href}>{phone.number}</a>
+                  </span>
+                ))}
               </p>
               <p>
-                <a href="mailto:aaaaa@avbinme.com.mx">aaaaa@avbinme.com.mx</a>
+                <a href={CONTACT_INFO.email.href}>{CONTACT_INFO.email.address}</a>
               </p>
               <div className="footer-badge">
                 Peritos Valuadores Certificados

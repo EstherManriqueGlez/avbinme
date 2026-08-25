@@ -1,4 +1,5 @@
 
+import { CONTACT_INFO } from "@/utils/constants";
 import "./ContactLinks.scss";
 
 const ContactLinks = () => {
@@ -33,8 +34,8 @@ const ContactLinks = () => {
                   />
                 </svg>
               </span>
-              <a href="tel:5555889578" target="_blank" rel="noreferrer">
-                55 5588 9578
+              <a href={CONTACT_INFO.phones[1].href} target="_blank" rel="noreferrer">
+                {CONTACT_INFO.phones[1].number}
               </a>
             </div>
             <div className="contact">
@@ -52,8 +53,8 @@ const ContactLinks = () => {
                   />
                 </svg>
               </span>
-              <a href="tel:5529551257" target="_blank" rel="noreferrer">
-                55 2955 1257
+              <a href={CONTACT_INFO.phones[0].href} target="_blank" rel="noreferrer">
+                {CONTACT_INFO.phones[0].number}
               </a>
             </div>
             <div className="contact">
@@ -72,11 +73,11 @@ const ContactLinks = () => {
                 </svg>
               </span>
               <a
-                href="mailto:aaaaa@avbinme.com.mx"
+                href={CONTACT_INFO.email.href}
                 target="_blank"
                 rel="noreferrer"
               >
-                aaaaa@avbinme.com.mx
+                {CONTACT_INFO.email.address}
               </a>
             </div>
             <div className="contact">
