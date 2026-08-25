@@ -1,79 +1,157 @@
 footer.footer {
-  background-color: $wine;
+  background-color: #0c0c0c;
   width: 100%;
-  height: auto;
-  color: $white;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  color: #cccccc;
+  padding: 6rem 2rem 3rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
 
   @media screen and (min-width: $tablet-BP) {
-    padding: 1rem;
+    padding: 8rem 4rem 4rem;
   }
 
-  @media screen and (min-width: $desktop-BP) {
-    padding: 1rem 10rem;
-    justify-content: flex-start;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
   }
 
-  .footer-logo {
-    img {
-      width: 5rem;
-      height: auto;
-      cursor: pointer;
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-bottom: 5rem;
 
-      @media screen and (min-width: $tablet-BP) {
-        width: 8rem;
-      }
-
-      @media screen and (min-width: $desktop-BP) {
-        max-width: 10rem;
-      }
+    @media screen and (min-width: $tablet-BP) {
+      grid-template-columns: repeat(2, 1fr);
     }
-  }
 
-  .footer-contact {
-    
     @media screen and (min-width: $desktop-BP) {
-      padding-left: 5rem;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 6rem;
     }
 
-    .footer-links {
-      margin: 0.5rem auto;
-      font-size: 0.8rem;
+    .footer-col {
+      &.brand-col {
+        img {
+          width: 9rem;
+          height: auto;
+          margin-bottom: 2rem;
+        }
 
-      @media screen and (min-width: $tablet-BP) {
-        margin: 0.6rem auto;
-        font-size: 1.5rem;
-      }
-      
-      @media screen and (min-width: $desktop-BP) {
-        margin: 0.8rem auto;
+        .footer-tagline {
+          font-family: $ff-sans;
+          font-size: 1.5rem;
+          line-height: 1.6;
+          color: #999999;
+          max-width: 380px;
+          margin: 0;
+        }
       }
 
-      a {
-        text-decoration: none;
-        color: $white;
+      h4 {
+        font-family: $ff-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #ffffff;
+        margin-bottom: 2rem;
+        letter-spacing: -0.01em;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        li {
+          a {
+            text-decoration: none;
+            font-family: $ff-sans;
+            font-size: 1.5rem;
+            color: #999999;
+            transition: color 0.2s ease;
+
+            &:hover {
+              color: #d4af37;
+            }
+          }
+        }
+      }
+
+      &.contact-col {
+        p {
+          font-family: $ff-sans;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+
+          a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+
+            &:hover {
+              color: #d4af37;
+            }
+          }
+        }
+
+        .footer-badge {
+          display: inline-block;
+          margin-top: 1.5rem;
+          background: rgba(212, 175, 55, 0.12);
+          color: #d4af37;
+          font-family: $ff-sans;
+          font-size: 1.2rem;
+          font-weight: 600;
+          padding: 0.6rem 1.2rem;
+          border-radius: 2rem;
+          border: 1px solid rgba(212, 175, 55, 0.3);
+        }
       }
     }
+  }
 
-    h5 {
-      font-size: 0.8rem;
-      margin: 0.5rem auto;
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 3rem;
+    gap: 1rem;
+    text-align: center;
 
-      @media screen and (min-width: $tablet-BP) {
-        font-size: 1.5rem;
-        margin: 0.6rem auto;
-      }
+    @media screen and (min-width: $tablet-BP) {
+      flex-direction: row;
+      text-align: left;
     }
 
-    p.is-small {
-      font-size: 0.7rem;
-      margin: 0 auto;
+    p {
+      font-family: $ff-sans;
+      font-size: 1.3rem;
+      color: #777777;
+      margin: 0 0 10px;
+      display: flex;
+      align-items: center;
+    }
 
-      @media screen and (min-width: $tablet-BP) {
-        font-size: 1rem;
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      flex-direction: inherit;
+      gap: inherit;
+      color: #777777;
+      font-size: 1.3rem;
+      margin: 0 0 10px;
+
+
+      .logo-img {
+        height: 24px;
+        width: auto;
+        padding: 0 10px;
       }
     }
   }

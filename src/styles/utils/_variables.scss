@@ -3,7 +3,9 @@
 /*-----------------------------------*\
     FONT FAMILY
 \*-----------------------------------*/
-$ff-nunito: 'Nunito', sans-serif;
+$ff-serif: 'Cormorant Garamond', serif;
+$ff-sans: 'Plus Jakarta Sans', sans-serif;
+$ff-nunito: 'Plus Jakarta Sans', sans-serif;
 
 /*-----------------------------------*\
     BREAKPOINTS IN CORRECT ORDER
@@ -17,17 +19,23 @@ $desktop-extra-big-BP: 1366px;
 $desktop-max-big-BP: 1600px;
 
 /*-----------------------------------*\
-    COLORS
+    COLORS & DESIGN TOKENS
 \*-----------------------------------*/
-$wine: #7d4039;
-$gray: #949494;
+$gold: #c5a059;
+$gold-light: #dfc285;
+$charcoal: #111111;
+$charcoal-light: #222222;
+$muted-gray: #666666;
+$bg-light: #fafafa;
+$border-color: rgba(0, 0, 0, 0.08);
+
+$white: #ffffff;
+$black: #000000;
+$dark: #333333;
+$wine: #c5a059;
 $gray-soft: #f1f1f1;
 $gray-soft-1: #f2f2f2;
-$gray-dark: #979797;
 $gray-modal: #ebebeb;
-$dark: #333333;
-$black: #000000;
-$white: #ffffff;
 
 
 /*-----------------------------------*\

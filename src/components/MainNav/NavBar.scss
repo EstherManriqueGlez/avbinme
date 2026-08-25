@@ -1,34 +1,42 @@
 header.header {
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  padding: 1rem 2rem;
+  align-items: center;
+  padding: 1.2rem 2.4rem;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 999;
   width: 100%;
-  background-color: $gray-soft-1;
+  background-color: rgba(250, 250, 250, 0.98);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
 
   @media screen and (min-width: $tablet-BP) {
-    padding: 1.25rem 4rem;
+    padding: 1.6rem 4rem;
   }
 
   @media screen and (min-width: $desktop-BP) {
-    padding: 1.5rem 10rem;
+    padding: 1.8rem 8rem;
   }
 
   .logo {
     img {
-      width: 6rem;
+      width: 6.5rem;
       height: auto;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.85;
+      }
 
       @media screen and (min-width: $tablet-BP) {
-        width: 7rem;
+        width: 7.5rem;
       }
 
       @media screen and (min-width: $desktop-BP) {
-        width: 10rem;
+        width: 9rem;
       }
     }
   }
@@ -37,16 +45,17 @@ header.header {
     display: flex;
     align-items: center;
     .nav-burger {
-      width: 32px;
-      height: 23px;
+      width: 28px;
+      height: 28px;
       transform: rotate(0deg);
-      transition: 0.5s ease-in-out;
+      transition: 0.4s ease-in-out;
+      border: none;
       & > span {
         display: block;
         position: absolute;
-        height: 3px;
+        height: 2px;
         width: 100%;
-        background: $dark;
+        background: $charcoal;
         opacity: 1;
         left: 0;
         transform: rotate(0deg);
@@ -70,8 +79,8 @@ header.header {
         & > span {
           &:nth-child(1) {
             transform: rotate(45deg);
-            top: -3px;
-            left: 8px;
+            top: 0px;
+            left: 6px;
           }
           &:nth-child(2) {
             width: 0%;
@@ -80,7 +89,7 @@ header.header {
           &:nth-child(3) {
             transform: rotate(-45deg);
             top: 20px;
-            left: 8px;
+            left: 6px;
           }
         }
       }
@@ -91,22 +100,23 @@ header.header {
     }
   }
 
-  /* ******************** */
   .menu {
     position: fixed;
-    top: 5.8rem;
+    top: 6.5rem;
     right: -100%;
     width: 100%;
-    height: 100%;
-    background-color: $gray-soft;
+    height: calc(100vh - 6.5rem);
+    background-color: rgba(250, 250, 250, 0.98);
+    // backdrop-filter: blur(20px);
     pointer-events: none;
-    transition: all 0.75s ease;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 
     @media screen and (min-width: $tablet-BP) {
-      top: 7rem;
+      top: 7.5rem;
+      height: calc(100vh - 7.5rem);
     }
     @media screen and (min-width: $desktop-BP) {
-      background-color: $gray-soft-1;
+      background-color: transparent;
       position: static;
       height: auto;
       right: auto;
@@ -115,7 +125,10 @@ header.header {
 
     .menu-nav {
       list-style: none;
-      padding: 5rem;
+      padding: 5rem 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       @media screen and (min-width: $tablet-BP) {
         padding: 7rem;
@@ -127,46 +140,67 @@ header.header {
         justify-content: flex-end;
         padding: 0;
         margin: 0;
-        line-height: normal;
         align-items: center;
         height: 100%;
       }
 
       li {
-        padding: 3rem 0;
+        padding: 1.6rem 0;
+        text-align: center;
+        width: 100%;
 
         @media screen and (min-width: $tablet-BP) {
-          padding: 5rem;
+          padding: 2.2rem 0;
         }
 
         @media screen and (min-width: $desktop-BP) {
-          padding: 0 0 0 2rem;
+          padding: 0 0 0 3.5rem;
+          width: auto;
         }
       }
 
       a {
-        padding: 1rem 0;
-        font-size: 2rem;
-        font-weight: bold;
-        text-align: center;
+        padding: 0.5rem 0;
+        font-family: $ff-sans;
+        font-size: 1.8rem;
+        font-weight: 500;
         text-decoration: none;
-        color: $dark;
+        color: $charcoal;
+        transition: color 0.2s ease;
+        position: relative;
+
+        &:hover {
+          color: $gold;
+        }
 
         @media screen and (min-width: $tablet-BP) {
-          font-size: 2.5rem;
+          font-size: 2.2rem;
         }
 
         @media screen and (min-width: $desktop-BP) {
-          font-size: 2rem;
+          font-size: 1.4rem;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #444444;
         }
       }
       
       .active {
-        border-bottom: 2.5px solid $wine;
+        color: $gold;
+        font-weight: 700;
 
         @media screen and (min-width: $desktop-BP) {
-          color: $dark;
-          border-bottom: none;
+          color: $charcoal;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            right: 0;
+            height: 1.5px;
+            background-color: $gold;
+          }
         }
       }
     }
