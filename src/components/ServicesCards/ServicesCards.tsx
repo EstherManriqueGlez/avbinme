@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+
 import imgInmuebles from "@/assets/images/inmuebles.jpg";
 import imgMaquinaria from "@/assets/images/maquinaria_equipo.jpg";
 import imgOpinionValor from "@/assets/images/opinion_valor.jpg";
@@ -14,7 +14,7 @@ interface ServicesCardsProps {
 
 const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
   return (
-    <Fragment>
+    <>
       <section className="cards-services">
         <div className="container">
           <div className="cards-wrapper">
@@ -94,25 +94,6 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
                 </div>
               </div>
             </div>
-            {/* Avalúo Maestro — para activarlo, descomentar y agregar:
-                import imgAvaluoMaestro from "@/assets/images/avaluo_maestro.jpg";
-            <div className="card-services">
-              <div className="card-image">
-                <img src={imgAvaluoMaestro} alt="Imagen de Avalúo Maestro" />
-              </div>
-              <div className="card-info">
-                <h2 className="card-title">Avalúo Maestro</h2>
-                <p className="card-paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Recusandae, officiis.
-                </p>
-                <div className="card-button">
-                  <button type="button" onClick={() => onOpenService("avaluo-maestro")}>
-                    LEER MÁS
-                  </button>
-                </div>
-              </div>
-            </div> */}
             <div className="card-services" id="regimen-de-propiedad-en-condominio">
               <div className="card-image">
                 <img
@@ -174,71 +155,10 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
                 </div>
               </div>
             </div>
-            {/* Estudios de Factibilidad — para activarlo, descomentar y agregar:
-                import imgEstudiosFactibilidad from "@/assets/images/estudios_factibilidad.jpg";
-            <div className="card-services">
-              <div className="card-image">
-                <img src={imgEstudiosFactibilidad} alt="Imagen de Estudios de Factibilidad" />
-              </div>
-              <div className="card-info">
-                <h2 className="card-title">Estudios de Factibilidad</h2>
-                <p className="card-paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Recusandae, officiis.
-                </p>
-                <div className="card-button">
-                  <button type="button" onClick={() => onOpenService("estudios-de-factibilidad")}>
-                    LEER MÁS
-                  </button>
-                </div>
-              </div>
-            </div> */}
-            {/* Análisis de Inversión Inmobiliaria — para activarlo, descomentar y agregar:
-                import imgAnalisisInversion from "@/assets/images/analisis_inversión_inmobiliaria.jpg";
-            <div className="card-services">
-              <div className="card-image">
-                <img src={imgAnalisisInversion} alt="Imagen de Análisis de Inversión Inmobiliaria" />
-              </div>
-              <div className="card-info">
-                <h2 className="card-title">
-                  Análisis de Inversión Inmobiliaria
-                </h2>
-                <p className="card-paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Recusandae, officiis.
-                </p>
-                <div className="card-button">
-                  <button type="button" onClick={() => onOpenService("analisis-de-inversion-inmobiliaria")}>
-                    LEER MÁS
-                  </button>
-                </div>
-              </div>
-            </div> */}
-            {/* Reexpresión de Estados Financieros — para activarlo, descomentar y agregar:
-                import imgReexpresion from "@/assets/images/reespresión_edos_financieros.jpg";
-            <div className="card-services">
-              <div className="card-image">
-                <img src={imgReexpresion} alt="Imagen de Reespresión de Estados Financieros" />
-              </div>
-              <div className="card-info">
-                <h2 className="card-title">
-                  Reexpresión de Estados Financieros
-                </h2>
-                <p className="card-paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Recusandae, officiis.
-                </p>
-                <div className="card-button">
-                  <button type="button" onClick={() => onOpenService("reexpresion-de-estados-financieros")}>
-                    LEER MÁS
-                  </button>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
-    </Fragment>
+    </>
   );
 };
 

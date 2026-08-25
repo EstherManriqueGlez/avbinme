@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+
 import { Link } from 'react-router-dom';
 
 const AvaluosBienesInmuebles = () => {
   return (
-    <Fragment>
+    <>
       <section
         className="services"
         aria-label="Título principal de la página inicio"
@@ -65,7 +65,7 @@ const AvaluosBienesInmuebles = () => {
           </div>
         </div>
       </section>
-    </Fragment>
+    </>
   );
 };
 

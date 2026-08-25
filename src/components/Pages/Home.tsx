@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+
 import { Link } from "react-router-dom";
 
 import AvaluosBienesInmuebles from '../AvaluosBienesInmuebles/AvaluosBienesInmuebles';
@@ -7,7 +7,7 @@ import "./Home.scss";
 
 const Home = () => {
   return (
-    <Fragment>
+    <>
       <HeroSlogan /> 
       
       {/* Sección de Introducción de Autoridad y Servicios */}
@@ -36,7 +36,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </Fragment>
+    </>
   )
 }
 

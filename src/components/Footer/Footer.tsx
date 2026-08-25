@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+
 import { Link } from 'react-router-dom';
 import logoNegativo from '@/assets/images/Logo_Negativo.svg';
 import logo from '@/assets/images/logo.png';
@@ -6,7 +6,7 @@ import './Footer.scss';
 
 const Footer = () => {
   return (
-    <Fragment>
+    <>
       <footer className="footer">
         <div className="container">
           <div className="footer-content">
@@ -74,7 +74,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </Fragment>
+    </>
   );
 };
 

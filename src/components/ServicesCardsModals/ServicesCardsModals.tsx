@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+
 import "./ServicesCardsModals.scss";
 import { services as dataServices } from "../../utils/services";
 
@@ -11,7 +11,7 @@ const ServicesCardsModals = ({ service, onClose }: ServicesCardsModalsProps) => 
   const serviceInfo = service ? dataServices[service as keyof typeof dataServices] : null;
 
   return (
-    <Fragment>
+    <>
       <section className="cards-modals">
         <div
           className="modal"
@@ -48,7 +48,7 @@ const ServicesCardsModals = ({ service, onClose }: ServicesCardsModalsProps) => 
           </div>
         </div>
       </section>
-    </Fragment>
+    </>
   );
 };
 

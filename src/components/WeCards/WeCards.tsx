@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+
 import imgMision from "@/assets/images/Misión.jpg";
 import imgVision from "@/assets/images/Visión.jpg";
 import imgValores from "@/assets/images/Valores.jpg";
@@ -6,7 +6,7 @@ import "./WeCards.scss";
 
 const WeCards = () => {
   return (
-    <Fragment>
+    <>
       <section
         className="cards-we"
         aria-label="Contenido de Misión, Visión y Valores"
@@ -64,7 +64,7 @@ const WeCards = () => {
           </div>
         </div>
       </section>
-    </Fragment>
+    </>
   );
 };
 

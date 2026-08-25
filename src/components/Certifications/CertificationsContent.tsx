@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+
 import imgCamSam from "@/assets/images/Logo-CAM-SAM.png";
 import logoShf from "@/assets/images/LOGO_SHF.svg";
 import imgTsj from "@/assets/images/TSJ.png";
@@ -48,7 +48,7 @@ const CERTIFICATIONS = [
 
 const CertificationsContent = () => {
   return (
-    <Fragment>
+    <>
       <section
         className="content-certifications"
         aria-label="Contenido de la sección de Certificaciones"
@@ -78,7 +78,7 @@ const CertificationsContent = () => {
           </div>
         </div>
       </section>
-    </Fragment>
+    </>
   );
 };
 
