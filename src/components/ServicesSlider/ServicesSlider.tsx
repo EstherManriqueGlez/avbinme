@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import slideNegocios from "@/assets/images/slide-1.jpg";
 import slideEvaluacionPI from "@/assets/images/slide-2.jpg";
 import slideMaquinaria from "@/assets/images/slide-3.jpg";
@@ -79,7 +79,7 @@ const ServicesSlider = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <section
         className="services-slider"
         aria-label="Contenido de la sección de Servicios"
@@ -129,7 +129,7 @@ const ServicesSlider = () => {
           ></div>
         </div>
       </section>
-    </Fragment>
+    </>
   );
 };
 

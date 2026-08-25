@@ -13,7 +13,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/styles/utils/variables"; @import "@/styles/utils/mixins";`,
+        additionalData: `@import "@/styles/utils/variables";`,
         // api: 'modern',
         silenceDeprecations: ['import', 'global-builtin', 'color-functions'],
       },

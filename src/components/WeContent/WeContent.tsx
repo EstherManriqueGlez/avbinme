@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react'
+
 import "./WeContent.scss";
 
 const WeContent = () => {
   return (
-    <Fragment>
+    <>
       <section className="content-we" aria-label="Contenido de la sección de Nosotros">
       <div className="main-subtitle" role="region" aria-label="Título de la página Nosotros">
         <h2>NOSOTROS</h2>
@@ -16,7 +16,7 @@ const WeContent = () => {
           cercano y personalizado, brindando un mejor servicio.</p>
       </div>
     </section>
-    </Fragment>
+    </>
   )
 }
 

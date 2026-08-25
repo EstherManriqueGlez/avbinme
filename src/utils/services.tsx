@@ -19,11 +19,6 @@ const services = {
     description:
       "<b>Obtenemos el valor de renta de un Bien Inmueble que necesites para:<br> Adquirirlo en renta.<br>Darlo en renta.<br>Controversia Jurídica,</b> para cobro de rentas debengadas y no pagadas (en cualquier tipo de juicio).",
   },
-  /* "avaluo-maestro": {
-    title: "Avalúo Maestro",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
-  }, */
   "regimen-de-propiedad-en-condominio": {
     title: "Régimen de Propiedad en Condominio",
     description:
@@ -39,21 +34,6 @@ const services = {
     description:
       "<b>La evaluación del proyecto es una parte fundamental para decidir la conveniencia ó no del proyecto.</b>",
   },
-  /* "estudios-de-factibilidad": {
-    title: "Estudios de Factibilidad",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit",
-  }, */
-  /* "analisis-de-inversion-inmobiliaria": {
-    title: "Análisis de Inversión Inmobiliaria",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
-  }, */
-  /* "reexpresion-de-estados-financieros": {
-    title: "Reexpresión de Estados Financieros",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
-  }, */
 };
 
 export { services }

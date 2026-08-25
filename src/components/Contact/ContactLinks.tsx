@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
+
 import "./ContactLinks.scss";
 
 const ContactLinks = () => {
   return (
-    <Fragment>
+    <>
       <section
         className="content-contact"
         aria-label="Contenido de la sección de Contacto"
@@ -102,7 +102,7 @@ const ContactLinks = () => {
           <span className="text-circle"></span>
         </div>
       </section>
-    </Fragment>
+    </>
   );
 };
 

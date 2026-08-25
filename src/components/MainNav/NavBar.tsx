@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logoAvbime from "@/assets/images/Logo_Web_Positivo.svg";
 import "./NavBar.scss";
@@ -19,7 +19,7 @@ const NavBar = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <header className="header">
         <div className="logo">
           <Link to="/">
@@ -62,7 +62,7 @@ const NavBar = () => {
           </ul>
         </nav>
       </header>
-    </Fragment>
+    </>
   );
 };
 
