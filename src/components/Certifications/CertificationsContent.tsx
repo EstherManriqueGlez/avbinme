@@ -5,6 +5,7 @@ import imgTsj from "@/assets/images/TSJ.png";
 import imgPjf from "@/assets/images/PJF.png";
 import imgTesoreria from "@/assets/images/Tesoteria.svg";
 import imgIndaabin from "@/assets/images/Indaabin.png";
+import MainSubtitle from "../MainSubtitle/MainSubtitle";
 import "./CertificationsContent.scss";
 
 const CERTIFICATIONS = [
@@ -53,14 +54,7 @@ const CertificationsContent = () => {
         className="content-certifications"
         aria-label="Contenido de la sección de Certificaciones"
       >
-        <div
-          className="main-subtitle"
-          role="region"
-          aria-label="Título de la página Cédulas Profesionales y Certificaciones"
-        >
-          <h2>CERTIFICACIONES Y REGISTROS OFICIALES</h2>
-          <span className="line-title"></span>
-        </div>
+        <MainSubtitle title="CERTIFICACIONES Y REGISTROS OFICIALES" ariaLabel="Título de la página Cédulas Profesionales y Certificaciones" />
 
         <div className="container">
           <div className="certifications-grid">
