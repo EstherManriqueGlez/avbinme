@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logoAvbime from "@/assets/images/Logo_Web_Positivo.svg";
 import "./NavBar.scss";
@@ -13,6 +13,14 @@ const NAV_ITEMS = [
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const getNavLinkClass = ({ isActive }: { isActive: boolean }) => {
     return isActive ? "active hvr-underline-from-center" : "hvr-underline-from-center";
@@ -20,7 +28,7 @@ const NavBar = () => {
 
   return (
     <>
-      <header className="header">
+      <header className={"header" + (scrolled ? " header--scrolled" : "")}>
         <div className="logo">
           <Link to="/">
             <img

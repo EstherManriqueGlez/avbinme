@@ -13,6 +13,10 @@ header.header {
   border-bottom: 1px solid $border-subtle;
   transition: all 0.3s ease;
 
+  &.header--scrolled {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  }
+
   @media screen and (min-width: $tablet-BP) {
     padding: 1.6rem 4rem;
   }
