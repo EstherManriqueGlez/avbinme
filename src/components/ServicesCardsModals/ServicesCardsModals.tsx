@@ -35,8 +35,9 @@ const ServicesCardsModals = ({ service, onClose }: ServicesCardsModalsProps) => 
           aria-modal="true"
           aria-hidden={!service}
           aria-label={serviceInfo?.title ?? "Detalle del servicio"}
+          onClick={onClose}
         >
-          <div className="modals-content">
+          <div className="modals-content" onClick={(e) => e.stopPropagation()}>
             <div>
               <button
                 ref={closeRef}
