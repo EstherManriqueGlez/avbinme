@@ -30,7 +30,7 @@ Crafted under an out-of-distribution digital design standard (*Impeccable Craft*
 ## 📂 Project Structure
 
 ```text
-avbinme-react/
+avbinme/
 ├── public/                  # Static assets and favicons
 ├── src/
 │   ├── assets/              # Brand images, icons, and official badges
