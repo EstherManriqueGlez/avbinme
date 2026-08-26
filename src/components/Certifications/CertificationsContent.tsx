@@ -1,13 +1,17 @@
 import MainSubtitle from "../MainSubtitle/MainSubtitle";
 import Card from "../Card/Card";
 import { CERTIFICATIONS_DATA } from "@/utils/cardsData";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 import "./CertificationsContent.scss";
 
 const CertificationsContent = () => {
+  const { ref: sectionRef, isVisible } = useScrollReveal<HTMLElement>();
+
   return (
     <>
       <section
-        className="content-certifications"
+        ref={sectionRef}
+        className={"content-certifications scroll-reveal" + (isVisible ? " scroll-reveal--visible" : "")}
         aria-label="Contenido de la sección de Certificaciones"
       >
         <MainSubtitle
@@ -17,15 +21,20 @@ const CertificationsContent = () => {
 
         <div className="container">
           <div className="certifications-grid">
-            {CERTIFICATIONS_DATA.map((item) => (
-              <Card
+            {CERTIFICATIONS_DATA.map((item, i) => (
+              <div
                 key={item.title}
-                image={item.image}
-                imageAlt={item.imageAlt}
-                title={item.title}
-                description={item.description}
-                variant="certification"
-              />
+                className={"scroll-reveal" + (isVisible ? " scroll-reveal--visible" : "")}
+                style={{ transitionDelay: `${(i + 1) * 0.1}s` }}
+              >
+                <Card
+                  image={item.image}
+                  imageAlt={item.imageAlt}
+                  title={item.title}
+                  description={item.description}
+                  variant="certification"
+                />
+              </div>
             ))}
           </div>
         </div>

@@ -14,7 +14,7 @@ const ContactLinks = () => {
         <div className="container container--wide">
           <div className="contact-info">
             <div className="contact">
-              <span className="icon-phone">
+              <span className="icon-phone" aria-hidden="true">
                 <svg
                   width="36"
                   height="36"
@@ -28,12 +28,12 @@ const ContactLinks = () => {
                   />
                 </svg>
               </span>
-              <a href={CONTACT_INFO.phones[1].href} target="_blank" rel="noreferrer">
+              <a href={CONTACT_INFO.phones[1].href} target="_blank" rel="noopener noreferrer">
                 {CONTACT_INFO.phones[1].number}
               </a>
             </div>
             <div className="contact">
-              <span className="icon-cel-phone">
+              <span className="icon-cel-phone" aria-hidden="true">
                 <svg
                   width="28"
                   height="48"
@@ -47,12 +47,12 @@ const ContactLinks = () => {
                   />
                 </svg>
               </span>
-              <a href={CONTACT_INFO.phones[0].href} target="_blank" rel="noreferrer">
+              <a href={CONTACT_INFO.phones[0].href} target="_blank" rel="noopener noreferrer">
                 {CONTACT_INFO.phones[0].number}
               </a>
             </div>
             <div className="contact">
-              <span className="icon-email">
+              <span className="icon-email" aria-hidden="true">
                 <svg
                   width="40"
                   height="32"
@@ -69,13 +69,13 @@ const ContactLinks = () => {
               <a
                 href={CONTACT_INFO.email.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 {CONTACT_INFO.email.address}
               </a>
             </div>
             <div className="contact">
-              <span className="icon-linkedin">
+              <span className="icon-linkedin" aria-hidden="true">
                 <svg
                   width="48"
                   height="48"
@@ -89,7 +89,7 @@ const ContactLinks = () => {
                   />
                 </svg>
               </span>
-              <a href="/" target="_blank">
+              <a href="https://www.linkedin.com/in/avbinme/" target="_blank" rel="noopener noreferrer">
                 https://www.linkedin.com/in/avbinme/
               </a>
             </div>

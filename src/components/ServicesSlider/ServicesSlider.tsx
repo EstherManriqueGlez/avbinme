@@ -68,9 +68,11 @@ const ServicesSlider = () => {
           <div
             className="hero-slider"
             id="hero-slider"
+            aria-live="polite"
+            aria-atomic="true"
             style={{
               marginLeft: `${-100 + offset}%`,
-              transition: withTransition ? `all ${TRANSITION_MS}ms` : "none",
+              transition: withTransition ? `margin-left ${TRANSITION_MS}ms` : "none",
             }}
           >
             {order.map((slideIndex) => {
@@ -85,28 +87,20 @@ const ServicesSlider = () => {
               );
             })}
           </div>
-          <div
+          <button
             className="slider-btn btn-left"
             id="btn-left"
-            role="button"
-            tabIndex={0}
+            type="button"
             aria-label="Slide anterior"
             onClick={() => rotate(-1)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") rotate(-1);
-            }}
-          ></div>
-          <div
+          ></button>
+          <button
             className="slider-btn btn-right"
             id="btn-right"
-            role="button"
-            tabIndex={0}
+            type="button"
             aria-label="Slide siguiente"
             onClick={() => rotate(1)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" || e.key === " ") rotate(1);
-            }}
-          ></div>
+          ></button>
         </div>
       </section>
     </>
