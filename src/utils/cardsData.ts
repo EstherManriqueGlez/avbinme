@@ -1,13 +1,6 @@
 import imgMision from "@/assets/images/Misión.jpg";
 import imgVision from "@/assets/images/Visión.jpg";
 import imgValores from "@/assets/images/Valores.jpg";
-import imgInmuebles from "@/assets/images/inmuebles.jpg";
-import imgMaquinaria from "@/assets/images/maquinaria_equipo.jpg";
-import imgOpinionValor from "@/assets/images/opinion_valor.jpg";
-import imgJustipreciacion from "@/assets/images/justipreciación_rentas.jpg";
-import imgRegimenCondominio from "@/assets/images/regimen_propiedad_condominio.jpg";
-import imgNegociosMarcha from "@/assets/images/negocios_en_marcha.jpg";
-import imgEvaluacionPI from "@/assets/images/evaluación_PI.jpg";
 import imgCamSam from "@/assets/images/Logo-CAM-SAM.png";
 import logoShf from "@/assets/images/LOGO_SHF.svg";
 import imgTsj from "@/assets/images/TSJ.png";
@@ -36,61 +29,6 @@ export const WE_CARDS_DATA = [
     title: "Valores",
     description:
       "Ética y Transparencia: Imparcialidad absoluta en cada dictamen. Rigor Técnico: Metodología sustentada en la normatividad vigente. Confidencialidad: Protección y reserva estricta de la información patrimonial. Compromiso: Respuesta oportuna y precisión jurídica para la toma de decisiones.",
-  },
-];
-
-export const SERVICES_CARDS_DATA = [
-  {
-    id: "inmuebles",
-    image: imgInmuebles,
-    imageAlt: "Imagen de Inmuebles",
-    title: "Inmuebles",
-    description: "¿Quieres saber el valor de cualquier tipo de inmueble?",
-  },
-  {
-    id: "maquinaria-y-equipo",
-    image: imgMaquinaria,
-    imageAlt: "Imagen de Maquinaria y Equipo",
-    title: "Maquinaria y Equipo",
-    description:
-      "!La importancia de conocer el valor de tus activos para la toma de decisiones¡",
-  },
-  {
-    id: "avaluo-judicial",
-    image: imgOpinionValor,
-    imageAlt: "Imagen de Opinión de Valor",
-    title: "Avalúos Judiciales",
-    description: "¿Requieres de un Avalúo para una Controversia Judicial?",
-  },
-  {
-    id: "justipreciacion-de-rentas",
-    image: imgJustipreciacion,
-    imageAlt: "Imagen de Justipreciación de Rentas",
-    title: "Justipreciación de Rentas",
-    description:
-      "¿Quieres saber cuál es el monto más apropiado para arrendamiento de un Bien Inmueble?",
-  },
-  {
-    id: "regimen-de-propiedad-en-condominio",
-    image: imgRegimenCondominio,
-    imageAlt: "Imagen de Régimen de Propiedad en Condominio",
-    title: "Régimen de Propiedad en Condominio",
-    description: "!Dale certeza Jurídica a tú propiedad¡",
-  },
-  {
-    id: "negocios-en-marcha",
-    image: imgNegociosMarcha,
-    imageAlt: "Imagen de Negocios en Marcha",
-    title: "Negocios en Marcha",
-    description: "¿Necesitas saber cuál es el valor de tu negocio?",
-  },
-  {
-    id: "evaluacion-de-proyectos-inmobliarios",
-    image: imgEvaluacionPI,
-    imageAlt: "Imagen de Evaluación de Proyectos Inmobiliarios",
-    title: "Evaluación de Proyectos Inmobiliarios",
-    description:
-      "!Antes de tomar la decisión de invertir en un proyecto, es necesario evaluarlo¡",
   },
 ];
 

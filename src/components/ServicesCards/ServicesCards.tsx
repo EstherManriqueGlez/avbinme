@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import { SERVICES_CARDS_DATA } from "@/utils/cardsData";
+import { SERVICES_DATA } from "@/utils/servicesData";
 import "./ServicesCards.scss";
 
 interface ServicesCardsProps {
@@ -12,13 +12,13 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
       <section className="cards-services">
         <div className="container">
           <div className="cards-wrapper">
-            {SERVICES_CARDS_DATA.map((card) => (
+            {SERVICES_DATA.map((card) => (
               <div key={card.id} id={card.id}>
                 <Card
                   image={card.image}
                   imageAlt={card.imageAlt}
                   title={card.title}
-                  description={card.description}
+                  description={card.shortDescription}
                   actionLabel="LEER MÁS"
                   onAction={() => onOpenService(card.id)}
                 />
