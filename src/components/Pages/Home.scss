@@ -38,10 +38,10 @@ section.services {
   }
 
   .services-content {
-    background: #ffffff;
+    background: $white;
     border-radius: 1.6rem;
     padding: 4rem 3rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 40px $shadow-sm;
     max-width: 1100px;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -139,24 +139,23 @@ section.services {
 
 /* Banner de Introducción del Home */
 .home-intro-banner {
-  background: #0c0c0c;
-  color: #ffffff;
+  background: $bg-dark;
+  color: $white;
   padding: 8rem 2rem;
   text-align: center;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid rgba($gold, 0.2);
 
   @media screen and (min-width: $tablet-BP) {
     padding: 10rem 4rem;
   }
 
-  .container {
-    max-width: 850px;
+  .container--narrow {
     margin: 0 auto;
   }
 
   .badge-luxury {
     display: inline-block;
-    background-color: rgba(197, 160, 89, 0.15);
+    background-color: rgba($gold, 0.15);
     color: $gold-light;
     font-family: $ff-sans;
     font-size: 1.1rem;
@@ -166,7 +165,7 @@ section.services {
     padding: 0.8rem 1.6rem;
     border-radius: 2rem;
     margin-bottom: 2.5rem;
-    border: 1px solid rgba(197, 160, 89, 0.3);
+    border: 1px solid rgba($gold, 0.3);
   }
 
   h2 {
@@ -175,7 +174,7 @@ section.services {
     font-weight: 500;
     line-height: 1.25;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: $white;
 
     @media screen and (min-width: $tablet-BP) {
       font-size: 4.4rem;
@@ -185,7 +184,7 @@ section.services {
   p {
     font-family: $ff-sans;
     font-size: 1.6rem;
-    color: #aaaaaa;
+    color: $text-secondary;
     line-height: 1.7;
     max-width: 700px;
     margin: 0 auto;
@@ -198,24 +197,23 @@ section.services {
 
 /* Sección de Conversión de Alto Impacto */
 .conversion-cta-section {
-  background-color: #0c0c0c;
+  background-color: $bg-dark;
   padding: 8rem 2rem;
   text-align: center;
-  color: #ffffff;
-  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  color: $white;
+  border-top: 1px solid rgba($gold, 0.2);
 
   @media screen and (min-width: $tablet-BP) {
     padding: 10rem 4rem;
   }
 
-  .container {
-    max-width: 950px;
+  .container--medium {
     margin: 0 auto;
   }
 
   .cta-card {
-    background: #141414;
-    border: 1px solid rgba(197, 160, 89, 0.25);
+    background: $surface-dark;
+    border: 1px solid rgba($gold, 0.25);
     border-radius: 1.6rem;
     padding: 5rem 3rem;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
@@ -226,7 +224,7 @@ section.services {
 
     .cta-badge {
       display: inline-block;
-      background-color: rgba(197, 160, 89, 0.15);
+      background-color: rgba($gold, 0.15);
       color: $gold-light;
       font-family: $ff-sans;
       font-size: 1.1rem;
@@ -236,7 +234,7 @@ section.services {
       padding: 0.8rem 1.6rem;
       border-radius: 2rem;
       margin-bottom: 2.5rem;
-      border: 1px solid rgba(197, 160, 89, 0.3);
+      border: 1px solid rgba($gold, 0.3);
     }
 
     h2 {
@@ -245,7 +243,7 @@ section.services {
       font-weight: 500;
       line-height: 1.25;
       margin-bottom: 1.5rem;
-      color: #ffffff;
+      color: $white;
 
       @media screen and (min-width: $tablet-BP) {
         font-size: 4rem;
@@ -255,7 +253,7 @@ section.services {
     p {
       font-family: $ff-sans;
       font-size: 1.6rem;
-      color: #aaaaaa;
+      color: $text-secondary;
       line-height: 1.7;
       margin-bottom: 4rem;
       max-width: 700px;
@@ -281,7 +279,7 @@ section.services {
 
       .btn-primary-gold {
         background-color: $gold;
-        color: #0c0c0c;
+        color: $bg-dark;
         font-family: $ff-sans;
         font-size: 1.4rem;
         font-weight: 600;
@@ -291,7 +289,7 @@ section.services {
         border-radius: 0.8rem;
         text-decoration: none;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 20px rgba(197, 160, 89, 0.3);
+        box-shadow: 0 4px 20px rgba($gold, 0.3);
         width: 100%;
 
         @media screen and (min-width: $tablet-BP) {
@@ -301,13 +299,13 @@ section.services {
         &:hover {
           background-color: $gold-light;
           transform: translateY(-2px);
-          box-shadow: 0 6px 25px rgba(197, 160, 89, 0.5);
+          box-shadow: 0 6px 25px rgba($gold, 0.5);
         }
       }
 
       .btn-secondary-phone {
         background-color: transparent;
-        color: #ffffff;
+        color: $white;
         font-family: $ff-sans;
         font-size: 1.4rem;
         font-weight: 600;
@@ -316,7 +314,7 @@ section.services {
         padding: 1.6rem 3.5rem;
         border-radius: 0.8rem;
         text-decoration: none;
-        border: 1px solid rgba(255, 255, 255, 0.25);
+        border: 1px solid rgba($white, 0.25);
         transition: all 0.3s ease;
         width: 100%;
 
@@ -325,8 +323,8 @@ section.services {
         }
 
         &:hover {
-          background-color: rgba(255, 255, 255, 0.06);
-          border-color: #ffffff;
+          background-color: rgba($white, 0.06);
+          border-color: $white;
           transform: translateY(-2px);
         }
       }

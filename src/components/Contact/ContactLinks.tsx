@@ -11,7 +11,7 @@ const ContactLinks = () => {
         aria-label="Contenido de la sección de Contacto"
       >
         <MainSubtitle title="CONTÁCTANOS" ariaLabel="Título de la página Contacto" />
-        <div className="container">
+        <div className="container container--wide">
           <div className="contact-info">
             <div className="contact">
               <span className="icon-phone">

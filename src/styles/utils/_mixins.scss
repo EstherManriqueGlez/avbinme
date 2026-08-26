@@ -1,16 +1,16 @@
 @mixin card-elevated {
-  background: #ffffff;
+  background: $white;
   border-radius: 1.2rem;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px $shadow-sm;
+  border: 1px solid $border-subtle;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    border-color: rgba(197, 160, 89, 0.3);
+    box-shadow: 0 20px 40px $shadow-md;
+    border-color: rgba($gold, 0.3);
   }
 }
