@@ -1,6 +1,6 @@
 
 import "./ServicesCardsModals.scss";
-import { services as dataServices } from "../../utils/services";
+import { SERVICES_DATA } from "@/utils/servicesData";
 
 interface ServicesCardsModalsProps {
   service: string | null;
@@ -8,7 +8,7 @@ interface ServicesCardsModalsProps {
 }
 
 const ServicesCardsModals = ({ service, onClose }: ServicesCardsModalsProps) => {
-  const serviceInfo = service ? dataServices[service as keyof typeof dataServices] : null;
+  const serviceInfo = service ? SERVICES_DATA.find((s) => s.id === service) : null;
 
   return (
     <>
@@ -37,10 +37,10 @@ const ServicesCardsModals = ({ service, onClose }: ServicesCardsModalsProps) => 
             <div className="modal-info">
               {service && serviceInfo && (
                 <>
-                  <span className={`icon-${service}`}></span>
+                  <span className={serviceInfo.iconClass}></span>
                   <h2>{serviceInfo.title}</h2>
                   <p
-                    dangerouslySetInnerHTML={{ __html: serviceInfo.description }}
+                    dangerouslySetInnerHTML={{ __html: serviceInfo.modalDescription }}
                   />
                 </>
               )}

@@ -1,54 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import slideNegocios from "@/assets/images/slide-1.jpg";
-import slideEvaluacionPI from "@/assets/images/slide-2.jpg";
-import slideMaquinaria from "@/assets/images/slide-3.jpg";
-import slideAnalisisInversion from "@/assets/images/slide-4.jpg";
+import { SERVICES_SLIDES } from "@/utils/servicesData";
 import "./ServicesSlider.scss";
-
-const SLIDES = [
-  {
-    img: slideNegocios,
-    alt: "Imagen de Negocios en Marcha",
-    title: (
-      <>
-        Valuación de <br /> Negocios en Marcha
-      </>
-    ),
-  },
-  {
-    img: slideEvaluacionPI,
-    alt: "Imagen de Evaluación de Proyectos Inmobiliarios",
-    title: (
-      <>
-        Evaluación de <br /> Proyectos Inmobiliarios
-      </>
-    ),
-  },
-  {
-    img: slideMaquinaria,
-    alt: "Imagen de Valuación de Maquinaria y Equipo",
-    title: (
-      <>
-        Valuación de <br /> Maquinaria y Equipo
-      </>
-    ),
-  },
-  {
-    img: slideAnalisisInversion,
-    alt: "Imagen de Análisis de Inversión Inmobiliaria",
-    title: (
-      <>
-        Análisis de <br /> Inversión Inmobiliaria
-      </>
-    ),
-  },
-];
 
 const TRANSITION_MS = 500;
 
 const ServicesSlider = () => {
-  // Orden inicial rotado (último al frente), igual que el comportamiento original
-  const [order, setOrder] = useState<number[]>([SLIDES.length - 1, 0, 1, 2]);
+  const [order, setOrder] = useState<number[]>([SERVICES_SLIDES.length - 1, 0, 1, 2]);
   const [offset, setOffset] = useState(0);
   const [withTransition, setWithTransition] = useState(false);
   const busyRef = useRef(false);
@@ -94,10 +51,10 @@ const ServicesSlider = () => {
             }}
           >
             {order.map((slideIndex) => {
-              const slide = SLIDES[slideIndex];
+              const slide = SERVICES_SLIDES[slideIndex];
               return (
                 <div className="slider-section" key={slideIndex}>
-                  <img src={slide.img} alt={slide.alt} />
+                  <img src={slide.image} alt={slide.imageAlt} />
                   <div className="slider-info">
                     <h3>{slide.title}</h3>
                   </div>
