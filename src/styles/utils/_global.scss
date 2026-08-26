@@ -13,9 +13,10 @@ html {
 }
 
 body {
-  font-family: $ff-sans;
   background-color: $bg-light;
   color: $charcoal;
+  font-family: $ff-sans;
+  margin: 0;
   padding-top: 7.2rem;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -50,6 +51,18 @@ body {
     max-width: 1200px;
     margin: 0 auto;
   }
+}
+
+.container--narrow {
+  max-width: 850px;
+}
+
+.container--medium {
+  max-width: 950px;
+}
+
+.container--wide {
+  max-width: 1000px;
 }
 
 .is-fluid {

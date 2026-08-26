@@ -13,7 +13,7 @@ const Home = () => {
       
       {/* Sección de Introducción de Autoridad y Servicios */}
       <section className="home-intro-banner">
-        <div className="container">
+        <div className="container container--narrow">
           <div className="intro-content">
             <span className="badge-luxury">Excelencia Pericial y Valuación</span>
             <h2>Rigurosidad Técnica y Validez Jurídica</h2>
@@ -26,7 +26,7 @@ const Home = () => {
       
       {/* Sección de Conversión de Alto Impacto (Menos de 90 segundos) */}
       <section className="conversion-cta-section">
-        <div className="container">
+        <div className="container container--medium">
           <div className="cta-card">
             <div className="cta-badge">Atención Inmediata</div>
             <h2>¿Requiere un Avalúo con Validez Legal y Rigor Técnico?</h2>

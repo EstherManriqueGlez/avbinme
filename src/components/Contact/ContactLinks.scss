@@ -4,10 +4,8 @@ section.content-contact {
   padding: 6rem 0 12rem;
   background-color: $bg-light;
 
-  .container {
-    max-width: 1000px;
+  .container--wide {
     margin: 3rem auto 0;
-    padding: 0 2.4rem;
 
     @media screen and (min-width: $tablet-BP) {
       display: flex;
@@ -15,65 +13,65 @@ section.content-contact {
       flex-direction: column;
       align-items: center;
     }
+  }
 
-    .contact-info {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 3rem;
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
+  .contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 
-      @media screen and (min-width: $tablet-BP) {
-        grid-template-columns: repeat(2, 1fr);
+    @media screen and (min-width: $tablet-BP) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $white;
+      padding: 4rem 3rem;
+      border-radius: 1.2rem;
+      box-shadow: 0 10px 30px $shadow-sm;
+      border: 1px solid $border-subtle;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px $shadow-md;
+        border-color: rgba($gold, 0.3);
       }
 
-      .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: #ffffff;
-        padding: 4rem 3rem;
-        border-radius: 1.2rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-        border: 1px solid rgba(0, 0, 0, 0.06);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        text-align: center;
+      span {
+        margin-bottom: 2rem;
+
+        svg {
+          width: 3.6rem;
+          height: auto;
+          path {
+            fill: $gold;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        font-family: $ff-sans;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $charcoal;
+        word-break: break-all;
+        transition: color 0.2s ease;
 
         &:hover {
-          transform: translateY(-6px);
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-          border-color: rgba(197, 160, 89, 0.3);
+          color: $gold;
         }
 
-        span {
-          margin-bottom: 2rem;
-
-          svg {
-            width: 3.6rem;
-            height: auto;
-            path {
-              fill: $gold;
-            }
-          }
-        }
-
-        a {
-          text-decoration: none;
-          font-family: $ff-sans;
-          font-size: 1.6rem;
-          font-weight: 600;
-          color: $charcoal;
-          word-break: break-all;
-          transition: color 0.2s ease;
-
-          &:hover {
-            color: $gold;
-          }
-
-          @media screen and (min-width: $tablet-BP) {
-            font-size: 1.8rem;
-          }
+        @media screen and (min-width: $tablet-BP) {
+          font-size: 1.8rem;
         }
       }
     }
