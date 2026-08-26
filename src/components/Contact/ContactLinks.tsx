@@ -1,5 +1,6 @@
 
 import { CONTACT_INFO } from "@/utils/constants";
+import MainSubtitle from "../MainSubtitle/MainSubtitle";
 import "./ContactLinks.scss";
 
 const ContactLinks = () => {
@@ -9,14 +10,7 @@ const ContactLinks = () => {
         className="content-contact"
         aria-label="Contenido de la sección de Contacto"
       >
-        <div
-          className="main-subtitle"
-          role="region"
-          aria-label="Título de la página Contacto"
-        >
-          <h2>CONTÁCTANOS</h2>
-          <span className="line-title"></span>
-        </div>
+        <MainSubtitle title="CONTÁCTANOS" ariaLabel="Título de la página Contacto" />
         <div className="container">
           <div className="contact-info">
             <div className="contact">

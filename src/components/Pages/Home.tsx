@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import AvaluosBienesInmuebles from '../AvaluosBienesInmuebles/AvaluosBienesInmuebles';
 import HeroSlogan from "../HeroSlogan/HeroSlogan";
+import MainSubtitle from "../MainSubtitle/MainSubtitle";
 import "./Home.scss";
 
 const Home = () => {

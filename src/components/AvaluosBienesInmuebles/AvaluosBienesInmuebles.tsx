@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom';
+import MainSubtitle from '../MainSubtitle/MainSubtitle';
 
 const AvaluosBienesInmuebles = () => {
   return (
@@ -18,14 +19,7 @@ const AvaluosBienesInmuebles = () => {
           </h1>
         </div>
 
-        <div
-          className="main-subtitle"
-          role="region"
-          aria-label="Título de la página Inicio"
-        >
-          <h2>AVALÚOS</h2>
-          <span className="line-title"></span>
-        </div>
+        <MainSubtitle title="AVALÚOS" variant="accent" ariaLabel="Título de la página Inicio" />
 
         <div className="services-content">
           <div className="container">
