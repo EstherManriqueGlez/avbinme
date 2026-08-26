@@ -24,7 +24,7 @@ const Footer = () => {
 
             <div className="footer-col links-col">
               <h4>Navegación</h4>
-              <ul>
+              <ul aria-label="Navegación del pie de página">
                 <li>
                   <Link to="/">Inicio</Link>
                 </li>
@@ -71,6 +71,7 @@ const Footer = () => {
             <a
               href="https://esthermanrique.github.io/Portafolio_Esther_Manrique_2021/#/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Desarrollado por:
               <img src={logo} alt="Manrique logo" className="logo-img" />

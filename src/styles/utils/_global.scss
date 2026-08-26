@@ -3,10 +3,6 @@
     UNIVERSAL
 \*-----------------------------------*/
 
-/* :root {
-  max-width: 1200px;  ******PREGNTAR********
-} */
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -35,6 +31,71 @@ body {
   }
 }
 
+/*-----------------------------------*\
+    FOCUS VISIBLE
+\*-----------------------------------*/
+:focus-visible {
+  outline: 2px solid $gold;
+  outline-offset: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/*-----------------------------------*\
+    VISUALLY HIDDEN (skip link)
+\*-----------------------------------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+
+  &:focus {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: auto;
+    height: auto;
+    padding: 1rem 2rem;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    background: $gold;
+    color: $bg-dark;
+    font-family: $ff-sans;
+    font-size: 1.4rem;
+    font-weight: 600;
+    z-index: 10000;
+    border-radius: 0.4rem;
+    text-decoration: none;
+  }
+}
+
+/*-----------------------------------*\
+    PREFERS REDUCED MOTION
+\*-----------------------------------*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*-----------------------------------*\
+    CONTAINERS
+\*-----------------------------------*/
 .main-content {
   min-height: auto;
 }
