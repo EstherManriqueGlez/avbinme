@@ -1,20 +1,30 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { SERVICES_SLIDES } from "@/utils/servicesData";
 import "./ServicesSlider.scss";
 
 const TRANSITION_MS = 500;
+const AUTOPLAY_MS = 5000;
 
 const ServicesSlider = () => {
   const [order, setOrder] = useState<number[]>([SERVICES_SLIDES.length - 1, 0, 1, 2]);
   const [offset, setOffset] = useState(0);
   const [withTransition, setWithTransition] = useState(false);
   const busyRef = useRef(false);
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const transitionTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const autoPlayTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  useEffect(() => {
-    return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
+  const clearAutoPlay = () => {
+    if (autoPlayTimerRef.current) {
+      clearTimeout(autoPlayTimerRef.current);
+      autoPlayTimerRef.current = null;
+    }
+  };
+
+  const startAutoPlay = useCallback(() => {
+    clearAutoPlay();
+    autoPlayTimerRef.current = setTimeout(() => {
+      rotate(1);
+    }, AUTOPLAY_MS);
   }, []);
 
   const rotate = (direction: 1 | -1) => {
@@ -23,7 +33,7 @@ const ServicesSlider = () => {
     setWithTransition(true);
     setOffset(direction * -100);
 
-    timerRef.current = setTimeout(() => {
+    transitionTimerRef.current = setTimeout(() => {
       setWithTransition(false);
       setOrder((current) =>
         direction === 1
@@ -32,8 +42,17 @@ const ServicesSlider = () => {
       );
       setOffset(0);
       busyRef.current = false;
+      startAutoPlay();
     }, TRANSITION_MS);
   };
+
+  useEffect(() => {
+    startAutoPlay();
+    return () => {
+      if (transitionTimerRef.current) clearTimeout(transitionTimerRef.current);
+      clearAutoPlay();
+    };
+  }, [startAutoPlay]);
 
   return (
     <>
@@ -41,7 +60,11 @@ const ServicesSlider = () => {
         className="services-slider"
         aria-label="Contenido de la sección de Servicios"
       >
-        <div className="container-slider">
+        <div
+          className="container-slider"
+          onMouseEnter={clearAutoPlay}
+          onMouseLeave={startAutoPlay}
+        >
           <div
             className="hero-slider"
             id="hero-slider"
