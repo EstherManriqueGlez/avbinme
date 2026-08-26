@@ -12,19 +12,11 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
 
   return (
     <>
-      <section
-        ref={sectionRef}
-        className={"cards-services scroll-reveal" + (isVisible ? " scroll-reveal--visible" : "")}
-      >
+      <section ref={sectionRef} className="cards-services">
         <div className="container">
           <div className="cards-wrapper">
-            {SERVICES_DATA.map((card, i) => (
-              <div
-                key={card.id}
-                id={card.id}
-                className={"scroll-reveal" + (isVisible ? " scroll-reveal--visible" : "")}
-                style={{ transitionDelay: `${(i + 1) * 0.1}s` }}
-              >
+            {SERVICES_DATA.map((card, i) => {
+              const cardElement = (
                 <Card
                   image={card.image}
                   imageAlt={card.imageAlt}
@@ -33,8 +25,27 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
                   actionLabel="LEER MÁS"
                   onAction={() => onOpenService(card.id)}
                 />
-              </div>
-            ))}
+              );
+
+              if (i === 0) {
+                return (
+                  <div key={card.id} id={card.id}>
+                    {cardElement}
+                  </div>
+                );
+              }
+
+              return (
+                <div
+                  key={card.id}
+                  id={card.id}
+                  className={"scroll-reveal" + (isVisible ? " scroll-reveal--visible" : "")}
+                  style={{ transitionDelay: `${(i - 1) * 0.1 + 0.15}s` }}
+                >
+                  {cardElement}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
