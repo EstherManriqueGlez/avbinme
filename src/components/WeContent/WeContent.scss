@@ -1,0 +1,22 @@
+.content-we {
+  padding: 6rem 0 3rem;
+  background-color: $bg-light;
+
+  .container--medium {
+    margin: 0 auto;
+  }
+  
+  p {
+    font-family: $ff-sans;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $muted-gray;
+    text-align: center;
+    line-height: 1.8;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet-BP) {
+     font-size: 2.2rem;
+    }
+  }
+}

@@ -1,0 +1,333 @@
+section.services {
+  background: $bg-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 10rem;
+  position: relative;
+
+  @media screen and (min-width: $tablet-BP) {
+    padding: 10rem 4rem 12rem;
+  }
+
+  @media screen and (min-width: $desktop-BP) {
+    padding: 12rem 6rem 14rem;
+  }
+
+  .main-title {
+    h1 {
+      font-family: $ff-serif;
+      color: $charcoal;
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 2rem;
+      max-width: 900px;
+
+      @media screen and (min-width: $tablet-BP) {
+        font-size: 4.4rem;
+      }
+
+      @media screen and (min-width: $desktop-BP) {
+        font-size: 5.4rem;
+      }
+    }
+  }
+
+  .services-content {
+    background: $white;
+    border-radius: 1.6rem;
+    padding: 4rem 3rem;
+    box-shadow: 0 20px 40px $shadow-sm;
+    max-width: 1100px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    @media screen and (min-width: $tablet-BP) {
+      padding: 5rem 6rem;
+    }
+
+    .container {
+      padding: 0;
+      max-width: 100%;
+      margin: 0;
+
+      .list-services {
+        text-align: left;
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+
+        @media screen and (min-width: $desktop-BP) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 3rem 6rem;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+        }
+
+        li {
+          background-size: 2.4rem;
+          background-position: left center;
+          background-repeat: no-repeat;
+          padding-left: 4rem;
+          margin-bottom: 2.2rem;
+          transition: transform 0.25s ease;
+
+          &:hover {
+            transform: translateX(6px);
+          }
+
+          @media screen and (min-width: $tablet-BP) {
+            background-size: 2.8rem;
+            padding-left: 5rem;
+            margin-bottom: 2.8rem;
+          }
+
+          a {
+            text-decoration: none;
+            color: $charcoal;
+            font-size: 1.6rem;
+            line-height: 1.5;
+            font-weight: 500;
+            font-family: $ff-sans;
+
+            @media screen and (min-width: $tablet-BP) {
+              font-size: 1.9rem;
+            }
+            
+            @media screen and (min-width: $desktop-BP) {
+              font-size: 2rem;
+            }
+          }
+
+          &.service-1 {
+            background-image: url("../../assets/icons/010-edificios.svg");
+          }
+
+          &.service-2 {
+            background-image: url("../../assets/icons/004-estadisticas.svg");
+          }
+
+          &.service-3 {
+            background-image: url("../../assets/icons/007-analisis-de-mercado.svg");
+          }
+
+          &.service-5 {
+            background-image: url("../../assets/icons/activos-1.svg");
+          }
+
+          &.service-6 {
+            background-image: url("../../assets/icons/edificio-de-oficinas-1.svg");
+          }
+
+          &.service-7 {
+            background-image: url("../../assets/icons/003-ruedas-dentadas.svg");
+          }
+
+          &.service-11 {
+            background-image: url("../../assets/icons/justice-law-svgrepo-com.svg");
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Banner de Introducción del Home */
+.home-intro-banner {
+  background: $bg-dark;
+  color: $white;
+  padding: 8rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid rgba($gold, 0.2);
+
+  @media screen and (min-width: $tablet-BP) {
+    padding: 10rem 4rem;
+  }
+
+  .container--narrow {
+    margin: 0 auto;
+  }
+
+  .badge-luxury {
+    display: inline-block;
+    background-color: rgba($gold, 0.15);
+    color: $gold-light;
+    font-family: $ff-sans;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid rgba($gold, 0.3);
+  }
+
+  h2 {
+    font-family: $ff-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+    color: $white;
+
+    @media screen and (min-width: $tablet-BP) {
+      font-size: 4.4rem;
+    }
+  }
+
+  p {
+    font-family: $ff-sans;
+    font-size: 1.6rem;
+    color: $text-secondary;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet-BP) {
+      font-size: 1.9rem;
+    }
+  }
+}
+
+/* Sección de Conversión de Alto Impacto */
+.conversion-cta-section {
+  background-color: $bg-dark;
+  padding: 8rem 2rem;
+  text-align: center;
+  color: $white;
+  border-top: 1px solid rgba($gold, 0.2);
+
+  @media screen and (min-width: $tablet-BP) {
+    padding: 10rem 4rem;
+  }
+
+  .container--medium {
+    margin: 0 auto;
+  }
+
+  .cta-card {
+    background: $surface-dark;
+    border: 1px solid rgba($gold, 0.25);
+    border-radius: 1.6rem;
+    padding: 5rem 3rem;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+
+    @media screen and (min-width: $tablet-BP) {
+      padding: 6rem 7rem;
+    }
+
+    .cta-badge {
+      display: inline-block;
+      background-color: rgba($gold, 0.15);
+      color: $gold-light;
+      font-family: $ff-sans;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.8rem 1.6rem;
+      border-radius: 2rem;
+      margin-bottom: 2.5rem;
+      border: 1px solid rgba($gold, 0.3);
+    }
+
+    h2 {
+      font-family: $ff-serif;
+      font-size: 2.8rem;
+      font-weight: 500;
+      line-height: 1.25;
+      margin-bottom: 1.5rem;
+      color: $white;
+
+      @media screen and (min-width: $tablet-BP) {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      font-family: $ff-sans;
+      font-size: 1.6rem;
+      color: $text-secondary;
+      line-height: 1.7;
+      margin-bottom: 4rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media screen and (min-width: $tablet-BP) {
+        font-size: 1.9rem;
+      }
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (min-width: $tablet-BP) {
+        flex-direction: row;
+        gap: 2rem;
+      }
+
+      .btn-primary-gold {
+        background-color: $gold;
+        color: $bg-dark;
+        font-family: $ff-sans;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 1.6rem 3.5rem;
+        border-radius: 0.8rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba($gold, 0.3);
+        width: 100%;
+
+        @media screen and (min-width: $tablet-BP) {
+          width: auto;
+        }
+
+        &:hover {
+          background-color: $gold-light;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 25px rgba($gold, 0.5);
+        }
+      }
+
+      .btn-secondary-phone {
+        background-color: transparent;
+        color: $white;
+        font-family: $ff-sans;
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 1.6rem 3.5rem;
+        border-radius: 0.8rem;
+        text-decoration: none;
+        border: 1px solid rgba($white, 0.25);
+        transition: all 0.3s ease;
+        width: 100%;
+
+        @media screen and (min-width: $tablet-BP) {
+          width: auto;
+        }
+
+        &:hover {
+          background-color: rgba($white, 0.06);
+          border-color: $white;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}

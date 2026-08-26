@@ -1,0 +1,14 @@
+.cards-we {
+  padding: 3rem 0 10rem;
+  background-color: $bg-light;
+
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+
+    @media screen and (min-width: $tablet-BP) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

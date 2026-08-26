@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AVBINME | Professional Valuation & Appraisal Services
 
-## Available Scripts
+A state-of-the-art, high-end corporate web application engineered for **AVBINME**, specializing in high-specialization expert appraisal and valuation services including real estate, machinery and equipment, judicial appraisals, condominium property regimes, rental justifications, going concerns, and real estate project evaluations.
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🏛️ Design System & Art Direction
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Crafted under an out-of-distribution digital design standard (*Impeccable Craft*), the interface reflects absolute technical rigor, authority, and B2B conversion optimization:
+- **Editorial Typography:** Harmonious pairing of *Cormorant Garamond* (for architectural headings and high-end display) and *Plus Jakarta Sans* (for pristine body readability).
+- **Minimalist Corporate Palette:** Clean ivory backgrounds (`#fafafa`), deep charcoal surfaces, and refined corporate gold accents (`#c5a059`) paired with immersive dark sections (`#0c0c0c`).
+- **Unified Multi-Page Architecture:** Dedicated routes for *Home*, *About Us*, *Services*, *Certifications*, and *Contact*, delivering a frictionless user journey designed to convert institutional clients in under 90 seconds.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Tech Stack
 
-### `npm run build`
+- **Framework:** React with TypeScript
+- **Routing:** React Router (`HashRouter`)
+- **Styling:** Modular Sass (SCSS) with structured design tokens and mixins
+- **Bundler:** Vite
+- **Quality Assurance:** Production-grade code adhering to strict accessibility, contrast, and responsive layout standards
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```text
+avbinme-react/
+├── public/                  # Static assets and favicons
+├── src/
+│   ├── assets/              # Brand images, icons, and official badges
+│   ├── components/          # Modular UI components (Navbar, Footer, Hero, Cards, Modals, etc.)
+│   ├── styles/              # Global SCSS tokens, mixins, and utilities
+│   ├── App.tsx              # Main application router setup
+│   └── main.tsx             # Application entry point
+├── PRODUCT.md               # Product requirements and positioning record
+├── package.json             # Dependencies and build scripts
+└── README.md                # Project documentation
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## ⚙️ Getting Started & Available Scripts
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ensure you have **Node.js** installed on your local machine.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 1. Installation
+Clone the repository and install dependencies:
+```bash
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 2. Development Mode
+Runs the app in development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm run dev
+# or
+npm start
+```
 
-## Learn More
+### 3. Production Build
+Bundles and optimizes the application for production inside the `dist` folder:
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📋 Core Sections & Routes
 
-### Code Splitting
+1. **Home (`/`):** High-impact introduction, institutional value proposition, and quick access to specialized valuation services.
+2. **About Us (`/nosotros`):** Formal corporate presentation outlining the Mission, Vision, and core values of the firm.
+3. **Services (`/servicios`):** Comprehensive catalog of expert appraisals and peritages featuring clean cards and detailed modal overviews.
+4. **Certifications (`/certificaciones`):** Official institutional accreditations and registries (CAM-SAM, SHF, TSJ, PJF, Tesorería CDMX, INDAABIN).
+5. **Contact (`/contacto`):** Frictionless B2B communication channels designed for immediate client outreach.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🛡️ License & Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Developed with exceptional craftsmanship, production-grade code, and senior software engineering standards. All rights reserved by **AVBINME**.

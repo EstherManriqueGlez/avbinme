@@ -1,0 +1,140 @@
+.cards-modals {
+  position: relative;
+  z-index: 2;
+  .modal {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9rem 1rem 2rem;
+    background-color: $overlay-bg;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+    @media screen and (min-width: $tablet-BP) {
+      padding: 9rem 2rem 2rem;
+    }
+
+    .modals-content {
+      width: 80%;
+      max-width: 80rem;
+      max-height: 80vh;
+      overflow-y: auto;
+      margin: auto;
+      flex-direction: row;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      background-color: $gray-modal;
+      border-radius: 0.8rem;
+      position: relative;
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
+      cursor: default;
+
+      @media screen and (min-width: $tablet-BP) {
+        width: 65%;
+        max-width: 65rem;
+        padding: 2.5rem;
+      }
+
+      div {
+        .icon-modal-close {
+          position: absolute;
+          top: 1.5rem;
+          right: 1.5rem;
+          background: url("../../assets/icons/hamburger-close.svg") no-repeat;
+          background-size: cover;
+          width: 2rem;
+          height: 2rem;
+          border: none;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          @media screen and (min-width: $desktop-BP) {
+            &:hover {
+              transform: scale(1.20);
+              transition: all 0.3s ease-in-out;
+              /* color: $wine; */
+
+            }
+          }
+        }
+      }
+
+      .modal-info {
+        text-align: center;
+        span {
+          display: inline-flex;
+          width: 4rem;
+          height: 4rem;
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin-top: 2rem;
+
+          @media screen and (min-width: $tablet-BP) {
+            width: 6rem;
+            height: 6rem;
+          }
+
+          &.icon-inmuebles {
+            background-image: url("../../assets/icons/010-edificios.svg");
+          }
+          &.icon-maquinaria-y-equipo {
+            background-image: url("../../assets/icons/003-ruedas-dentadas.svg");
+          }
+          &.icon-avaluo-judicial {
+            background-image: url("../../assets/icons/justice-law-svgrepo-com.svg");
+          }
+          &.icon-justipreciacion-de-rentas {
+            background-image: url("../../assets/icons/activos-1.svg");
+          }
+          /* &.icon-avaluo-maestro {
+            background-image: url("../../assets/icons/012-casas-1.svg");
+          } */
+          &.icon-regimen-de-propiedad-en-condominio {
+            background-image: url("../../assets/icons/edificio-de-oficinas-1.svg");
+          }
+          &.icon-negocios-en-marcha {
+            background-image: url("../../assets/icons/004-estadisticas.svg");
+          }
+          &.icon-evaluacion-de-proyectos-inmobliarios {
+            background-image: url("../../assets/icons/007-analisis-de-mercado.svg");
+          }
+          /* &.icon-estudios-de-factibilidad {
+            background-image: url("../../assets/icons/006-cadena-de-valor-1.svg");
+          } */
+          /* &.icon-analisis-de-inversion-inmobiliaria {
+            background-image: url("../../assets/icons/005-buscar.svg");
+          } */
+          /* &.icon-reexpresion-de-estados-financieros {
+            background-image: url("../../assets/icons/009-estado-financiero.svg");
+          } */
+        }
+
+        h2 {
+          font-size: 2.4rem;
+          font-weight: 700;
+          text-align: center;
+          margin: 1rem auto;
+          color: $black;
+
+          @media screen and (min-width: $tablet-BP) {
+            font-size: 3.5rem;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+          font-weight: 200;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
