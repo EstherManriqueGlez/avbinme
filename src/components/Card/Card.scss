@@ -1,6 +1,7 @@
 .card {
   @include card-elevated;
   margin: 0;
+  height: 100%;
 
   .card__image {
     height: 22rem;

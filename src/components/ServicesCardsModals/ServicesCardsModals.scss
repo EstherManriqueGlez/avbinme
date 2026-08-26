@@ -3,7 +3,7 @@
   z-index: 2;
   .modal {
     position: fixed;
-    z-index: 999;
+    z-index: 1000;
     top: 0;
     right: 0;
     bottom: 0;
@@ -11,14 +11,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 9rem 1rem 2rem;
     background-color: $overlay-bg;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
 
+    @media screen and (min-width: $tablet-BP) {
+      padding: 9rem 2rem 2rem;
+    }
+
     .modals-content {
       width: 80%;
       max-width: 80rem;
+      max-height: 80vh;
+      overflow-y: auto;
       margin: auto;
       flex-direction: row;
       padding: 2rem;
@@ -27,7 +34,8 @@
       background-color: $gray-modal;
       border-radius: 0.8rem;
       position: relative;
-      box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+      box-shadow: 0 4px 40px rgba(0, 0, 0, 0.3);
+      cursor: default;
 
       @media screen and (min-width: $tablet-BP) {
         width: 65%;
