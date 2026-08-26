@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/avbinme-react/',
+  base: '/avbinme/',
   resolve: {
     alias: {
       '@': path.resolve(import.meta.dirname, 'src'),

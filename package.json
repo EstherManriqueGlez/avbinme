@@ -1,8 +1,8 @@
 {
-  "name": "avbinme-react",
+  "name": "avbinme",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://EstherManrique.github.io/avbinme-react",
+  "homepage": "https://EstherManriqueGlez.github.io/avbinme",
   "type": "module",
   "dependencies": {
     "react": "^19.0.0",
