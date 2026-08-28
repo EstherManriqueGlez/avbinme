@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import MainSubtitle from '../MainSubtitle/MainSubtitle';
+import { MainSubtitle } from '../MainSubtitle/MainSubtitle';
 import { SERVICES_DATA } from '@/utils/servicesData';
 
-const AvaluosBienesInmuebles = () => {
+export const AvaluosBienesInmuebles = () => {
   return (
     <>
       <section
@@ -37,4 +37,3 @@ const AvaluosBienesInmuebles = () => {
   );
 };
 
-export default AvaluosBienesInmuebles;

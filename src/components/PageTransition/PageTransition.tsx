@@ -6,7 +6,7 @@ const prefersReducedMotion =
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-const PageTransition = ({ children }: { children: React.ReactNode }) => {
+export const PageTransition = ({ children }: { children: React.ReactNode }) => {
   const { pathname } = useLocation();
   const [visible, setVisible] = useState(prefersReducedMotion);
 
@@ -25,6 +25,7 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
   return (
     <main
       id="main-content"
+      tabIndex={-1}
       className={"page-transition" + (visible ? " page-transition--visible" : "")}
     >
       {children}
@@ -32,4 +33,3 @@ const PageTransition = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default PageTransition;

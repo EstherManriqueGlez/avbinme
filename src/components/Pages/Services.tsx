@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import ServicesCards from '../ServicesCards/ServicesCards'
-import ServicesCardsModals from '../ServicesCardsModals/ServicesCardsModals'
-import ServicesSlider from '../ServicesSlider/ServicesSlider'
+import { ServicesCards } from '../ServicesCards/ServicesCards'
+import { ServicesCardsModals } from '../ServicesCardsModals/ServicesCardsModals'
+import { ServicesSlider } from '../ServicesSlider/ServicesSlider'
 
-const Services = () => {
+export const Services = () => {
   const [activeService, setActiveService] = useState<string | null>(null);
 
   return (
@@ -18,4 +18,3 @@ const Services = () => {
   )
 }
 
-export default Services

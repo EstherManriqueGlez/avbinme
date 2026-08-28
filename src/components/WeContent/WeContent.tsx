@@ -1,8 +1,8 @@
 
-import MainSubtitle from "../MainSubtitle/MainSubtitle";
+import { MainSubtitle } from "../MainSubtitle/MainSubtitle";
 import "./WeContent.scss";
 
-const WeContent = () => {
+export const WeContent = () => {
   return (
     <>
       <section className="content-we" aria-label="Contenido de la sección de Nosotros">
@@ -18,4 +18,3 @@ const WeContent = () => {
   )
 }
 
-export default WeContent

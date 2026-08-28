@@ -1,9 +1,9 @@
-import Card from "../Card/Card";
+import { Card } from "../Card/Card";
 import { WE_CARDS_DATA } from "@/utils/cardsData";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import "./WeCards.scss";
 
-const WeCards = () => {
+export const WeCards = () => {
   const { ref: sectionRef, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
@@ -36,4 +36,3 @@ const WeCards = () => {
   );
 };
 
-export default WeCards;

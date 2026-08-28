@@ -1,10 +1,10 @@
-import MainSubtitle from "../MainSubtitle/MainSubtitle";
-import Card from "../Card/Card";
+import { MainSubtitle } from "../MainSubtitle/MainSubtitle";
+import { Card } from "../Card/Card";
 import { CERTIFICATIONS_DATA } from "@/utils/cardsData";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import "./CertificationsContent.scss";
 
-const CertificationsContent = () => {
+export const CertificationsContent = () => {
   const { ref: sectionRef, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
@@ -43,4 +43,3 @@ const CertificationsContent = () => {
   );
 };
 
-export default CertificationsContent;
