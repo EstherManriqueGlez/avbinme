@@ -5,7 +5,7 @@ import logo from '@/assets/images/logo.png';
 import { CONTACT_INFO } from '@/utils/constants';
 import './Footer.scss';
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <>
       <footer className="footer">
@@ -84,4 +84,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;

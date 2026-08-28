@@ -7,7 +7,7 @@ interface MainSubtitleProps {
   ariaLabel?: string;
 }
 
-const MainSubtitle = ({ title, variant = "default", ariaLabel }: MainSubtitleProps) => {
+export const MainSubtitle = ({ title, variant = "default", ariaLabel }: MainSubtitleProps) => {
   const className = variant === "accent" ? "main-subtitle main-subtitle--accent" : "main-subtitle";
   const { ref, isVisible } = useScrollReveal<HTMLDivElement>();
 
@@ -24,4 +24,3 @@ const MainSubtitle = ({ title, variant = "default", ariaLabel }: MainSubtitlePro
   );
 };
 
-export default MainSubtitle;

@@ -1,12 +1,12 @@
 import { Routes, Route, HashRouter } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
-import Home from "./components/Pages/Home";
-import We from "./components/Pages/We";
-import Contact from "./components/Pages/Contact";
-import Services from "./components/Pages/Services";
-import Certifications from "./components/Pages/Certifications";
+import { Layout } from "./components/Layout/Layout";
+import { Home } from "./components/Pages/Home";
+import { We } from "./components/Pages/We";
+import { Contact } from "./components/Pages/Contact";
+import { Services } from "./components/Pages/Services";
+import { Certifications } from "./components/Pages/Certifications";
 
-function App() {
+export const App = () => {
   return (
     <HashRouter>
       <Routes>
@@ -22,4 +22,3 @@ function App() {
   );
 }
 
-export default App;

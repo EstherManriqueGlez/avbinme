@@ -5,7 +5,7 @@ import "./ServicesSlider.scss";
 const TRANSITION_MS = 500;
 const AUTOPLAY_MS = 5000;
 
-const ServicesSlider = () => {
+export const ServicesSlider = () => {
   const [order, setOrder] = useState<number[]>([SERVICES_SLIDES.length - 1, 0, 1, 2]);
   const [offset, setOffset] = useState(0);
   const [withTransition, setWithTransition] = useState(false);
@@ -107,4 +107,3 @@ const ServicesSlider = () => {
   );
 };
 
-export default ServicesSlider;

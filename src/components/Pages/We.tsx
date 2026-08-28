@@ -1,9 +1,9 @@
 
-import HeroSlogan from '../HeroSlogan/HeroSlogan'
-import WeCards from '../WeCards/WeCards'
-import WeContent from '../WeContent/WeContent'
+import { HeroSlogan } from '../HeroSlogan/HeroSlogan'
+import { WeCards } from '../WeCards/WeCards'
+import { WeContent } from '../WeContent/WeContent'
 
-const We = () => {
+export const We = () => {
   return (
     <>
       <HeroSlogan />
@@ -13,4 +13,3 @@ const We = () => {
   )
 }
 
-export default We

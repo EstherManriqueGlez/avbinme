@@ -1,4 +1,4 @@
-import Card from "../Card/Card";
+import { Card } from "../Card/Card";
 import { SERVICES_DATA } from "@/utils/servicesData";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import "./ServicesCards.scss";
@@ -7,7 +7,7 @@ interface ServicesCardsProps {
   onOpenService: (id: string) => void;
 }
 
-const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
+export const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
   const { ref: sectionRef, isVisible } = useScrollReveal<HTMLElement>();
 
   return (
@@ -53,4 +53,3 @@ const ServicesCards = ({ onOpenService }: ServicesCardsProps) => {
   );
 };
 
-export default ServicesCards;

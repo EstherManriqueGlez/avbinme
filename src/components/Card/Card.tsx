@@ -10,7 +10,7 @@ interface CardProps {
   variant?: "standard" | "certification";
 }
 
-const Card = ({
+export const Card = ({
   image,
   imageAlt,
   title,
@@ -42,4 +42,3 @@ const Card = ({
   );
 };
 
-export default Card;

@@ -1,8 +1,8 @@
 
-import ContactLinks from "../Contact/ContactLinks";
-import HeroSlogan from "../HeroSlogan/HeroSlogan";
+import { ContactLinks } from "../Contact/ContactLinks";
+import { HeroSlogan } from "../HeroSlogan/HeroSlogan";
 
-const Contact = () => {
+export const Contact = () => {
   return (
     <>
       <HeroSlogan />
@@ -11,4 +11,3 @@ const Contact = () => {
   );
 };
 
-export default Contact;

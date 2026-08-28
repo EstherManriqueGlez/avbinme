@@ -11,7 +11,7 @@ const NAV_ITEMS = [
   { to: "/contacto", label: "CONTACTO" },
 ];
 
-const NavBar = () => {
+export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -83,4 +83,3 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
