@@ -7,7 +7,7 @@ const prefersReducedMotion =
   typeof window !== "undefined" &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-const ScrollToTop = () => {
+export const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
@@ -32,4 +32,3 @@ const ScrollToTop = () => {
   return null;
 };
 
-export default ScrollToTop;

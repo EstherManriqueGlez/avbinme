@@ -1,9 +1,9 @@
 
 import { CONTACT_INFO } from "@/utils/constants";
-import MainSubtitle from "../MainSubtitle/MainSubtitle";
+import { MainSubtitle } from "../MainSubtitle/MainSubtitle";
 import "./ContactLinks.scss";
 
-const ContactLinks = () => {
+export const ContactLinks = () => {
   return (
     <>
       <section
@@ -101,4 +101,3 @@ const ContactLinks = () => {
   );
 };
 
-export default ContactLinks;

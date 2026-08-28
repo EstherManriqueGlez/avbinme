@@ -8,12 +8,16 @@ interface ServicesCardsModalsProps {
   onClose: () => void;
 }
 
-const ServicesCardsModals = ({ service, onClose }: ServicesCardsModalsProps) => {
+export const ServicesCardsModals = ({ service, onClose }: ServicesCardsModalsProps) => {
   const serviceInfo = service ? SERVICES_DATA.find((s) => s.id === service) : null;
   const closeRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    if (!service) return;
+    if (!service) {
+      closeRef.current?.blur();
+      document.getElementById("main-content")?.focus();
+      return;
+    }
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
@@ -66,4 +70,3 @@ const ServicesCardsModals = ({ service, onClose }: ServicesCardsModalsProps) => 
   );
 };
 
-export default ServicesCardsModals;

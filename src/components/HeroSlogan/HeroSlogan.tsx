@@ -1,7 +1,7 @@
 
 import "./HeroSlogan.scss";
 
-const HeroSlogan = () => {
+export const HeroSlogan = () => {
   return (
     <>
       <section className="hero-slogan" aria-label="Hero Slogan">
@@ -13,4 +13,3 @@ const HeroSlogan = () => {
   );
 };
 
-export default HeroSlogan;

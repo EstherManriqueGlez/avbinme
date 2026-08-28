@@ -1,8 +1,8 @@
 
-import HeroSlogan from '../HeroSlogan/HeroSlogan';
-import CertificationsContent from '../Certifications/CertificationsContent';
+import { HeroSlogan } from '../HeroSlogan/HeroSlogan';
+import { CertificationsContent } from '../Certifications/CertificationsContent';
 
-const Certifications = () => {
+export const Certifications = () => {
   return (
     <>
       <HeroSlogan />
@@ -11,4 +11,3 @@ const Certifications = () => {
   )
 }
 
-export default Certifications

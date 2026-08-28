@@ -1,12 +1,12 @@
 
 import { Link } from "react-router-dom";
 
-import AvaluosBienesInmuebles from '../AvaluosBienesInmuebles/AvaluosBienesInmuebles';
-import HeroSlogan from "../HeroSlogan/HeroSlogan";
+import { AvaluosBienesInmuebles } from '../AvaluosBienesInmuebles/AvaluosBienesInmuebles';
+import { HeroSlogan } from "../HeroSlogan/HeroSlogan";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import "./Home.scss";
 
-const Home = () => {
+export const Home = () => {
   const { ref: introRef, isVisible: introVisible } = useScrollReveal();
   const { ref: ctaRef, isVisible: ctaVisible } = useScrollReveal();
 
@@ -50,4 +50,3 @@ const Home = () => {
   )
 }
 
-export default Home
