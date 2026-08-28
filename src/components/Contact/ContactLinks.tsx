@@ -28,8 +28,8 @@ export const ContactLinks = () => {
                   />
                 </svg>
               </span>
-              <a href={CONTACT_INFO.phones[1].href} target="_blank" rel="noopener noreferrer">
-                {CONTACT_INFO.phones[1].number}
+              <a href={CONTACT_INFO.phones[0].href} target="_blank" rel="noopener noreferrer">
+                {CONTACT_INFO.phones[0].number}
               </a>
             </div>
             <div className="contact">
@@ -47,8 +47,8 @@ export const ContactLinks = () => {
                   />
                 </svg>
               </span>
-              <a href={CONTACT_INFO.phones[0].href} target="_blank" rel="noopener noreferrer">
-                {CONTACT_INFO.phones[0].number}
+              <a href={CONTACT_INFO.phones[1].href} target="_blank" rel="noopener noreferrer">
+                {CONTACT_INFO.phones[1].number}
               </a>
             </div>
             <div className="contact">
