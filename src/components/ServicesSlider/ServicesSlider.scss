@@ -57,24 +57,25 @@ section.services-slider {
     transform: translateY(-50%);
     display: flex;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
   }
 
   .btn-left {
-    background: url("../../assets/icons/arrow-left.svg") no-repeat center;
     left: 0.1rem;
+    background: url("../../assets/icons/arrow-left.svg") no-repeat center;
 
     @media screen and (min-width: $tablet-BP) {
-      background: url("../../assets/icons/arrow-left.png") no-repeat center;
       left: 1rem;
     }
   }
 
   .btn-right {
-    background: url("../../assets/icons/arrow-right.svg") no-repeat center;
     right: 0.1rem;
+    background: url("../../assets/icons/arrow-right.svg") no-repeat center;
 
     @media screen and (min-width: $tablet-BP) {
-      background: url("../../assets/icons/arrow-right.png") no-repeat center;
       right: 1rem;
     }
   }
