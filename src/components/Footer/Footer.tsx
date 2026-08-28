@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import logoNegativo from '@/assets/images/Logo_Negativo.svg';
-import logo from '@/assets/images/logo.png';
+import logo from '@/assets/images/logo.webp';
 import { CONTACT_INFO } from '@/utils/constants';
 import './Footer.scss';
 
@@ -13,7 +13,7 @@ export const Footer = () => {
           <div className="footer-content">
             <div className="footer-col brand-col">
               <Link to="/">
-                <img src={logoNegativo} alt="Logotipo AVBINME" />
+                <img src={logoNegativo} alt="Logotipo AVBINME" loading="lazy" decoding="async" />
               </Link>
               <p className="footer-tagline">
                 Servicios profesionales en valuación inmobiliaria, maquinaria y
@@ -74,7 +74,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
             >
               Desarrollado por:
-              <img src={logo} alt="Manrique logo" className="logo-img" />
+              <img src={logo} alt="Manrique logo" className="logo-img" loading="lazy" decoding="async" />
               Esther Manrique González
             </a>
           </div>

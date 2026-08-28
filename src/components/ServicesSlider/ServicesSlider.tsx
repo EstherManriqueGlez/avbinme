@@ -79,7 +79,7 @@ export const ServicesSlider = () => {
               const slide = SERVICES_SLIDES[slideIndex];
               return (
                 <div className="slider-section" key={slideIndex}>
-                  <img src={slide.image} alt={slide.imageAlt} />
+                  <img src={slide.image} alt={slide.imageAlt} loading="lazy" decoding="async" />
                   <div className="slider-info">
                     <h3>{slide.title}</h3>
                   </div>

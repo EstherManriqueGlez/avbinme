@@ -25,7 +25,7 @@ export const Card = ({
   return (
     <div className={className}>
       <div className="card__image">
-        <img src={image} alt={imageAlt} />
+        <img src={image} alt={imageAlt} loading="lazy" decoding="async" />
       </div>
       <div className="card__body">
         <h3 className="card__title">{title}</h3>

@@ -1,12 +1,12 @@
-import imgMision from "@/assets/images/Misión.jpg";
-import imgVision from "@/assets/images/Visión.jpg";
-import imgValores from "@/assets/images/Valores.jpg";
-import imgCamSam from "@/assets/images/Logo-CAM-SAM.png";
+import imgMision from "@/assets/images/Misión.webp";
+import imgVision from "@/assets/images/Visión.webp";
+import imgValores from "@/assets/images/Valores.webp";
+import imgCamSam from "@/assets/images/Logo-CAM-SAM.webp";
 import logoShf from "@/assets/images/LOGO_SHF.svg";
-import imgTsj from "@/assets/images/TSJ.png";
-import imgPjf from "@/assets/images/PJF.png";
+import imgTsj from "@/assets/images/TSJ.webp";
+import imgPjf from "@/assets/images/PJF.webp";
 import imgTesoreria from "@/assets/images/Tesoteria.svg";
-import imgIndaabin from "@/assets/images/Indaabin.png";
+import imgIndaabin from "@/assets/images/Indaabin.webp";
 
 export const WE_CARDS_DATA = [
   {
