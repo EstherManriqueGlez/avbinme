@@ -1,14 +1,14 @@
-import imgInmuebles from "@/assets/images/inmuebles.jpg";
-import imgMaquinaria from "@/assets/images/maquinaria_equipo.jpg";
-import imgOpinionValor from "@/assets/images/opinion_valor.jpg";
-import imgJustipreciacion from "@/assets/images/justipreciación_rentas.jpg";
-import imgRegimenCondominio from "@/assets/images/regimen_propiedad_condominio.jpg";
-import imgNegociosMarcha from "@/assets/images/negocios_en_marcha.jpg";
-import imgEvaluacionPI from "@/assets/images/evaluación_PI.jpg";
-import slideNegocios from "@/assets/images/slide-1.jpg";
-import slideEvaluacionPI from "@/assets/images/slide-2.jpg";
-import slideMaquinaria from "@/assets/images/slide-3.jpg";
-import slideAnalisisInversion from "@/assets/images/slide-4.jpg";
+import imgInmuebles from "@/assets/images/inmuebles.webp";
+import imgMaquinaria from "@/assets/images/maquinaria_equipo.webp";
+import imgOpinionValor from "@/assets/images/opinion_valor.webp";
+import imgJustipreciacion from "@/assets/images/justipreciación_rentas.webp";
+import imgRegimenCondominio from "@/assets/images/regimen_propiedad_condominio.webp";
+import imgNegociosMarcha from "@/assets/images/negocios_en_marcha.webp";
+import imgEvaluacionPI from "@/assets/images/evaluación_PI.webp";
+import slideNegocios from "@/assets/images/slide-1.webp";
+import slideEvaluacionPI from "@/assets/images/slide-2.webp";
+import slideMaquinaria from "@/assets/images/slide-3.webp";
+import slideAnalisisInversion from "@/assets/images/slide-4.webp";
 
 export interface ServiceData {
   id: string;

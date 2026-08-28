@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import logoNegativo from '@/assets/images/Logo_Negativo.svg';
-import logo from '@/assets/images/logo.png';
+import logo from '@/assets/images/logo.webp';
 import { CONTACT_INFO } from '@/utils/constants';
 import './Footer.scss';
 
