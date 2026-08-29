@@ -13,17 +13,17 @@ body {
   color: $charcoal;
   font-family: $ff-sans;
   margin: 0;
-  padding-top: 7.2rem;
+  padding-top: 7.7rem;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   @media screen and (min-width: $tablet-BP) {
-    padding-top: 8rem;
+    padding-top: 9.3rem;
   }
 
   @media screen and (min-width: $desktop-BP) {
-    padding-top: 9rem;
+    padding-top: 10.9rem;
   }
 
   * {
