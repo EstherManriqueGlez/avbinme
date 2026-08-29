@@ -1,6 +1,10 @@
 section.cards-services {
-  padding: 8rem 0 10rem;
+  padding: $section-gap 0 $section-close;
   background-color: $bg-light;
+
+  @media screen and (min-width: $tablet-BP) {
+    padding: $section-close 0 $section-close;
+  }
 
   .container {
     @media screen and (min-width: $desktop-BP) {
@@ -9,7 +13,6 @@ section.cards-services {
     }
 
     .cards-wrapper {
-      margin: 2rem auto;
       display: flex;
       flex-direction: column;
       gap: 2rem;

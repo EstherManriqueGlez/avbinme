@@ -1,6 +1,10 @@
 section.content-certifications {
-  padding: 6rem 0 10rem;
+  padding: $section-gap 0 $section-close;
   background-color: $bg-light;
+
+  @media screen and (min-width: $tablet-BP) {
+    padding: $section-gap-lg 0 $section-close;
+  }
 
   .container {
     max-width: 1200px;
