@@ -1,6 +1,10 @@
 .content-we {
-  padding: 6rem 0 3rem;
+  padding: $section-gap 0 3rem;
   background-color: $bg-light;
+
+  @media screen and (min-width: $tablet-BP) {
+    padding: $section-gap-lg 0 3rem;
+  }
 
   .container--medium {
     margin: 0 auto;

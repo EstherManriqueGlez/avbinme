@@ -51,3 +51,10 @@ $shadow-sm: rgba(0, 0, 0, 0.04);
 $shadow-md: rgba(0, 0, 0, 0.08);
 $border-subtle: rgba(0, 0, 0, 0.06);
 $overlay-bg: rgba(0, 0, 0, 0.5);
+
+/*-----------------------------------*\
+    ESPACIADO DE SECCIÓN (ritmo vertical)
+\*-----------------------------------*/
+$section-gap: 4rem;        // separación compacta (móvil / entre bloques tras hero)
+$section-gap-lg: 6rem;     // separación estándar (tablet/desktop)
+$section-close: 8rem;     // cierre de página antes del footer

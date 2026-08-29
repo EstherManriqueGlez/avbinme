@@ -1,8 +1,12 @@
 section.content-contact {
   position: relative;
   overflow: hidden;
-  padding: 6rem 0 12rem;
+  padding: $section-gap 0 $section-close;
   background-color: $bg-light;
+
+  @media screen and (min-width: $tablet-BP) {
+    padding: $section-gap-lg 0 $section-close;
+  }
 
   .container--wide {
     margin: 3rem auto 0;
