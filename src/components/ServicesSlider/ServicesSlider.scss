@@ -4,12 +4,20 @@ section.services-slider {
   overflow: hidden;
   position: relative;
 
+  @media screen and (min-width: $desktop-BP) {
+    height: min(65vh, 720px);
+  }
+
   .hero-slider {
     display: flex;
     width: 400%;
     height: auto;
     text-align: center;
     margin-left: -100%;
+
+    @media screen and (min-width: $desktop-BP) {
+      height: min(65vh, 720px);
+    }
 
     .slider-section {
       width: 100%;
