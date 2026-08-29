@@ -3,30 +3,37 @@ import { useLocation } from "react-router-dom";
 
 const NAVBAR_HEIGHT = 80;
 
-const prefersReducedMotion =
-  typeof window !== "undefined" &&
-  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (typeof window !== "undefined" && "scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+const scrollToTop = () => {
+  const doScroll = () =>
+    window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(doScroll);
+  });
+};
 
 export const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    const behavior = prefersReducedMotion ? "auto" : "smooth";
-
     if (hash) {
       const timer = setTimeout(() => {
         const element = document.getElementById(hash.slice(1));
         if (element) {
           const top = element.getBoundingClientRect().top + window.scrollY - NAVBAR_HEIGHT;
-          window.scrollTo({ top, behavior });
+          window.scrollTo({ top, behavior: "auto" });
           return;
         }
-        window.scrollTo(0, 0);
+        scrollToTop();
       }, 100);
       return () => clearTimeout(timer);
     }
 
-    window.scrollTo(0, 0);
+    scrollToTop();
   }, [pathname, hash]);
 
   return null;
